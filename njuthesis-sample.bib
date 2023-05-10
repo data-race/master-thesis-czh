@@ -1,0 +1,600 @@
+% 举例，DNN的巨大成功
+@inproceedings{resnet,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={770--778},
+  year={2016}
+}
+
+@article{imagenet,
+  title={Imagenet classification with deep convolutional neural networks},
+  author={Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+  journal={Advances in neural information processing systems},
+  volume={25},
+  year={2012}
+}
+
+@article{bert,
+  title={Bert: Pre-training of deep bidirectional transformers for language understanding},
+  author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  journal={arXiv preprint arXiv:1810.04805},
+  year={2018}
+}
+
+@inproceedings{bart,
+    title = "{BART}: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+    author = "Lewis, Mike  and
+      Liu, Yinhan  and
+      Goyal, Naman  and
+      Ghazvininejad, Marjan  and
+      Mohamed, Abdelrahman  and
+      Levy, Omer  and
+      Stoyanov, Veselin  and
+      Zettlemoyer, Luke",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.703",
+    doi = "10.18653/v1/2020.acl-main.703",
+    pages = "7871--7880",
+    abstract = "We present BART, a denoising autoencoder for pretraining sequence-to-sequence models. BART is trained by (1) corrupting text with an arbitrary noising function, and (2) learning a model to reconstruct the original text. It uses a standard Tranformer-based neural machine translation architecture which, despite its simplicity, can be seen as generalizing BERT (due to the bidirectional encoder), GPT (with the left-to-right decoder), and other recent pretraining schemes. We evaluate a number of noising approaches, finding the best performance by both randomly shuffling the order of sentences and using a novel in-filling scheme, where spans of text are replaced with a single mask token. BART is particularly effective when fine tuned for text generation but also works well for comprehension tasks. It matches the performance of RoBERTa on GLUE and SQuAD, and achieves new state-of-the-art results on a range of abstractive dialogue, question answering, and summarization tasks, with gains of up to 3.5 ROUGE. BART also provides a 1.1 BLEU increase over a back-translation system for machine translation, with only target language pretraining. We also replicate other pretraining schemes within the BART framework, to understand their effect on end-task performance.",
+}
+
+
+@inproceedings{recomendation1,
+  title={Deep neural networks for youtube recommendations},
+  author={Covington, Paul and Adams, Jay and Sargin, Emre},
+  booktitle={Proceedings of the 10th ACM conference on recommender systems},
+  pages={191--198},
+  year={2016}
+}
+
+@inproceedings{recomendation2,
+  title={Billion-scale commodity embedding for e-commerce recommendation in alibaba},
+  author={Wang, Jizhe and Huang, Pipei and Zhao, Huan and Zhang, Zhibo and Zhao, Binqiang and Lee, Dik Lun},
+  booktitle={Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  pages={839--848},
+  year={2018}
+}
+
+@article{yolo,
+  title={You Only Look Once: Unified, Real-Time Object Detection},
+  author={Joseph Redmon and Santosh Kumar Divvala and Ross B. Girshick and Ali Farhadi},
+  journal={2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2016},
+  pages={779-788}
+}
+
+@article{yolov3,
+  title={Yolov3: An incremental improvement},
+  author={Redmon, Joseph and Farhadi, Ali},
+  journal={arXiv preprint arXiv:1804.02767},
+  year={2018}
+}
+
+@inproceedings{amoebanet,
+  title={Regularized evolution for image classifier architecture search},
+  author={Real, Esteban and Aggarwal, Alok and Huang, Yanping and Le, Quoc V},
+  booktitle={Proceedings of the aaai conference on artificial intelligence},
+  volume={33},
+  number={01},
+  pages={4780--4789},
+  year={2019}
+}
+
+@incollection{bp,
+  title={Theory of the backpropagation neural network},
+  author={Hecht-Nielsen, Robert},
+  booktitle={Neural networks for perception},
+  pages={65--93},
+  year={1992},
+  publisher={Elsevier}
+}
+
+@article{adam,
+  title={Adam: A method for stochastic optimization},
+  author={Kingma, Diederik P and Ba, Jimmy},
+  journal={arXiv preprint arXiv:1412.6980},
+  year={2014}
+}
+
+@inproceedings{rmsprop,
+  title={Learned optimizers that scale and generalize},
+  author={Wichrowska, Olga and Maheswaranathan, Niru and Hoffman, Matthew W and Colmenarejo, Sergio Gomez and Denil, Misha and Freitas, Nando and Sohl-Dickstein, Jascha},
+  booktitle={International Conference on Machine Learning},
+  pages={3751--3760},
+  year={2017},
+  organization={PMLR}
+}
+
+@article{tpu-gpu,
+  title={Benchmarking TPU, GPU, and CPU platforms for deep learning},
+  author={Wang, Yu Emma and Wei, Gu-Yeon and Brooks, David},
+  journal={arXiv preprint arXiv:1907.10701},
+  year={2019}
+}
+
+@article{large-batch,
+  title={Don't decay the learning rate, increase the batch size},
+  author={Smith, Samuel L and Kindermans, Pieter-Jan and Ying, Chris and Le, Quoc V},
+  journal={arXiv preprint arXiv:1711.00489},
+  year={2017}
+}
+
+% 流行的机器学习框架
+@inproceedings{tensorflow,
+  title     = {Tensorflow: A system for large-scale machine learning},
+  author    = {Abadi, Mart{\'\i}n and Barham, Paul and Chen, Jianmin and Chen, Zhifeng and Davis, Andy and Dean, Jeffrey and Devin, Matthieu and Ghemawat, Sanjay and Irving, Geoffrey and Isard, Michael and others},
+  booktitle = {12th $\{$USENIX$\}$ Symposium on Operating Systems Design and Implementation ($\{$OSDI$\}$ 16)},
+  pages     = {265--283},
+  year      = {2016}
+}
+
+@article{mxnet,
+  title   = {Mxnet: A flexible and efficient machine learning library for heterogeneous distributed systems},
+  author  = {Chen, Tianqi and Li, Mu and Li, Yutian and Lin, Min and Wang, Naiyan and Wang, Minjie and Xiao, Tianjun and Xu, Bing and Zhang, Chiyuan and Zhang, Zheng},
+  journal = {arXiv preprint arXiv:1512.01274},
+  year    = {2015}
+}
+
+@article{pytorch,
+  title  = {Automatic differentiation in PyTorch},
+  author = {Paszke, Adam and Gross, Sam and Chintala, Soumith and Chanan, Gregory and Yang, Edward and DeVito, Zachary and Lin, Zeming and Desmaison, Alban and Antiga, Luca and Lerer, Adam},
+  year   = {2017},
+}
+
+@article{ddl-survey,
+  title={A survey on distributed machine learning},
+  author={Verbraeken, Joost and Wolting, Matthijs and Katzy, Jonathan and Kloppenburg, Jeroen and Verbelen, Tim and Rellermeyer, Jan S},
+  journal={Acm computing surveys (csur)},
+  volume={53},
+  number={2},
+  pages={1--33},
+  year={2020},
+  publisher={ACM New York, NY, USA}
+}
+
+
+% 流水线并行化
+@article{gpipe,
+  title={Gpipe: Efficient training of giant neural networks using pipeline parallelism},
+  author={Huang, Yanping and Cheng, Youlong and Bapna, Ankur and Firat, Orhan and Chen, Dehao and Chen, Mia and Lee, HyoukJoong and Ngiam, Jiquan and Le, Quoc V and Wu, Yonghui and others},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  year={2019}
+}
+
+@inproceedings{pipedream,
+  title={PipeDream: generalized pipeline parallelism for DNN training},
+  author={Narayanan, Deepak and Harlap, Aaron and Phanishayee, Amar and Seshadri, Vivek and Devanur, Nikhil R and Ganger, Gregory R and Gibbons, Phillip B and Zaharia, Matei},
+  booktitle={Proceedings of the 27th ACM Symposium on Operating Systems Principles},
+  pages={1--15},
+  year={2019}
+}
+
+@inproceedings{hippie,
+  title={Hippie: A Data-Paralleled Pipeline Approach to Improve Memory-Efficiency and Scalability for Large DNN Training},
+  author={Ye, Xiangyu and Lai, Zhiquan and Li, Shengwei and Cai, Lei and Sun, Ding and Qiao, Linbo and Li, Dongsheng},
+  booktitle={50th International Conference on Parallel Processing},
+  pages={1--10},
+  year={2021}
+}
+
+@inproceedings{hetpipe,
+  title={$\{$HetPipe$\}$: Enabling Large $\{$DNN$\}$ Training on (Whimpy) Heterogeneous $\{$GPU$\}$ Clusters through Integration of Pipelined Model Parallelism and Data Parallelism},
+  author={Park, Jay H and Yun, Gyeongchan and Chang, M Yi and Nguyen, Nguyen T and Lee, Seungmin and Choi, Jaesik and Noh, Sam H and Choi, Young-ri},
+  booktitle={2020 USENIX Annual Technical Conference (USENIX ATC 20)},
+  pages={307--321},
+  year={2020}
+}
+
+@inproceedings{dapple,
+  title={DAPPLE: A pipelined data parallel approach for training large models},
+  author={Fan, Shiqing and Rong, Yi and Meng, Chen and Cao, Zongyan and Wang, Siyu and Zheng, Zhen and Wu, Chuan and Long, Guoping and Yang, Jun and Xia, Lixue and others},
+  booktitle={Proceedings of the 26th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+  pages={431--445},
+  year={2021}
+}
+
+% 模型划分相关工作
+@inproceedings{rl1,
+  title={Device placement optimization with reinforcement learning},
+  author={Mirhoseini, Azalia and Pham, Hieu and Le, Quoc V and Steiner, Benoit and Larsen, Rasmus and Zhou, Yuefeng and Kumar, Naveen and Norouzi, Mohammad and Bengio, Samy and Dean, Jeff},
+  booktitle={International Conference on Machine Learning},
+  pages={2430--2439},
+  year={2017},
+  organization={PMLR}
+}
+
+@inproceedings{rl2,
+  title={A hierarchical model for device placement},
+  author={Mirhoseini, Azalia and Goldie, Anna and Pham, Hieu and Steiner, Benoit and Le, Quoc V and Dean, Jeff},
+  booktitle={International Conference on Learning Representations},
+  year={2018}
+}
+
+@inproceedings{baechi,
+  title={Baechi: fast device placement of machine learning graphs},
+  author={Jeon, Beomyeol and Cai, Linda and Srivastava, Pallavi and Jiang, Jintao and Ke, Xiaolan and Meng, Yitao and Xie, Cong and Gupta, Indranil},
+  booktitle={Proceedings of the 11th ACM Symposium on Cloud Computing},
+  pages={416--430},
+  year={2020}
+}
+
+@inproceedings{pesto,
+  title={Towards optimal placement and scheduling of DNN operations with Pesto},
+  author={Hafeez, Ubaid Ullah and Sun, Xiao and Gandhi, Anshul and Liu, Zhenhua},
+  booktitle={Proceedings of the 22nd International Middleware Conference},
+  pages={39--51},
+  year={2021}
+}
+
+@inproceedings{rannc,
+  title={Automatic graph partitioning for very large-scale deep learning},
+  author={Tanaka, Masahiro and Taura, Kenjiro and Hanawa, Toshihiro and Torisawa, Kentaro},
+  booktitle={2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  pages={1004--1013},
+  year={2021},
+  organization={IEEE}
+}
+
+@article{self-driving1,
+  title={A survey of autonomous driving: Common practices and emerging technologies},
+  author={Yurtsever, Ekim and Lambert, Jacob and Carballo, Alexander and Takeda, Kazuya},
+  journal={IEEE access},
+  volume={8},
+  pages={58443--58469},
+  year={2020},
+  publisher={IEEE}
+}
+
+@inproceedings{self-driving2,
+  title={PTTR: Relational 3D Point Cloud Object Tracking with Transformer},
+  author={Zhou, Changqing and Luo, Zhipeng and Luo, Yueru and Liu, Tianrui and Pan, Liang and Cai, Zhongang and Zhao, Haiyu and Lu, Shijian},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={8531--8540},
+  year={2022}
+}
+
+@online{copilot,
+  author = {},
+  title = {{G}it{H}ub {C}opilot · {Y}our {A}{I} pair programmer --- github.com},
+  year = {},
+  url = {https://github.com/features/copilot},
+  urldate = {Accessed 04-Jan-2023}
+}
+
+@inproceedings{mlp,
+  title={Multilayer perceptron structures applied to adaptive equalisers for data communications},
+  author={Gibson, Galvin J and Siu, Sammy and Cowen, CFN},
+  booktitle={International Conference on Acoustics, Speech, and Signal Processing,},
+  pages={1183--1186},
+  year={1989},
+  organization={IEEE}
+}
+
+@book{ml-book,
+  title={机器学习及其应用},
+  author={王珏,周志华,周傲英},
+  volume={4},
+  year={2006},
+  publisher={清华大学出版社有限公司}
+}
+
+@inproceedings{cross-entropy,
+  title={The cross entropy method for classification},
+  author={Mannor, Shie and Peleg, Dori and Rubinstein, Reuven},
+  booktitle={Proceedings of the 22nd international conference on Machine learning},
+  pages={561--568},
+  year={2005}
+}
+
+@online{cuda,
+  author = {},
+  title = {CUDA Toolkit},
+  year = {},
+  url = {https://developer.nvidia.com/cuda-toolkit},
+  urldate = {Accessed 04-Jan-2023}
+}
+
+@inproceedings{nccl,
+  title={Nccl 2.0},
+  author={Jeaugey, Sylvain},
+  booktitle={GPU Technology Conference (GTC)},
+  volume={2},
+  year={2017}
+}
+
+@online{nvml,
+  author = {},
+  title = {NVML: Nvidia management library},
+  year = {},
+  url = {https://developer.nvidia.com/nvidia-management-library-nvml},
+  urldate = {Accessed 04-Jan-2023}
+}
+
+
+@online{nvlink,
+  author = {},
+  title = {NVLink \& NV-Switch},
+  year = {},
+  url = {https://www.nvidia.com/en-us/data-center/nvlink/},
+  urldate = {Accessed 04-Jan-2023}
+}
+
+
+@inproceedings{rdma,
+  title={Design guidelines for high performance $\{$RDMA$\}$ systems},
+  author={Kalia, Anuj and Kaminsky, Michael and Andersen, David G},
+  booktitle={2016 USENIX Annual Technical Conference (USENIX ATC 16)},
+  pages={437--450},
+  year={2016}
+}
+
+@online{infiniband,
+  author = {},
+  title = {Infiniband: end-to-end high-performance networking solutions.},
+  year = {},
+  url = {https://www.nvidia.com/en-us/networking/products/infiniband/},
+  urldate = {Accessed 04-Jan-2023}
+}
+
+@online{pytorch-pipeline,
+  author = {},
+  title = {Pipe apis in PyTorch 1.13},
+  year = {},
+  url = {https://pytorch.org/docs/stable/pipeline.html#pipe-apis-in-pytorch},
+  urldate = {Accessed 04-Jan-2023}
+}
+
+
+
+@article{dp,
+  title={Pytorch distributed: Experiences on accelerating data parallel training},
+  author={Li, Shen and Zhao, Yanli and Varma, Rohan and Salpekar, Omkar and Noordhuis, Pieter and Li, Teng and Paszke, Adam and Smith, Jeff and Vaughan, Brian and Damania, Pritam and others},
+  journal={arXiv preprint arXiv:2006.15704},
+  year={2020}
+}
+
+@article{mp,
+  title={Heterogeneous model parallelism for deep neural networks},
+  author={Moreno-Alvarez, Sergio and Haut, Juan M and Paoletti, Mercedes E and Rico-Gallego, Juan A},
+  journal={Neurocomputing},
+  volume={441},
+  pages={1--12},
+  year={2021},
+  publisher={Elsevier}
+}
+
+@article{ps,
+  title={Communication efficient distributed machine learning with the parameter server},
+  author={Li, Mu and Andersen, David G and Smola, Alexander J and Yu, Kai},
+  journal={Advances in Neural Information Processing Systems},
+  volume={27},
+  year={2014}
+}
+
+@article{ring,
+  title={Horovod: fast and easy distributed deep learning in TensorFlow},
+  author={Sergeev, Alexander and Del Balso, Mike},
+  journal={arXiv preprint arXiv:1802.05799},
+  year={2018}
+}
+
+@inproceedings{byteps,
+  title={A Unified Architecture for Accelerating Distributed DNN Training in Heterogeneous GPU/CPU Clusters},
+  author={Yimin Jiang and Yibo Zhu and Chang Lan and Bairen Yi and Yong Cui and Chuanxiong Guo},
+  booktitle={USENIX Symposium on Operating Systems Design and Implementation},
+  year={2020}
+}
+
+@article{elasticps,
+  title={Elastic parameter server load distribution in deep learning clusters},
+  author={Yangrui Chen and Yanghua Peng and Yixin Bao and Chuan Wu and Yibo Zhu and Chuanxiong Guo},
+  journal={Proceedings of the 11th ACM Symposium on Cloud Computing},
+  year={2020}
+}
+
+@article{pshub,
+  title={Parameter Hub: a Rack-Scale Parameter Server for Distributed Deep Neural Network Training},
+  author={Liang Luo and Jacob Nelson and Luis Ceze and Amar Phanishayee and Arvind Krishnamurthy},
+  journal={Proceedings of the ACM Symposium on Cloud Computing},
+  year={2018}
+}
+
+@inproceedings{gossip-learning,
+  title={Gossip Learning as a Decentralized Alternative to Federated Learning},
+  author={Istv{\'a}n Heged{\"u}s and G{\'a}bor Danner and M{\'a}rk Jelasity},
+  booktitle={IFIP International Conference on Distributed Applications and Interoperable Systems},
+  year={2019}
+}
+
+@article{bsp,
+  title={Direct bulk-synchronous parallel algorithms},
+  author={Gerbessiotis, Alexandros V and Valiant, Leslie G},
+  journal={Journal of parallel and distributed computing},
+  volume={22},
+  number={2},
+  pages={251--267},
+  year={1994},
+  publisher={Elsevier}
+}
+
+@article{mr,
+  title={MapReduce: simplified data processing on large clusters},
+  author={Dean, Jeffrey and Ghemawat, Sanjay},
+  journal={Communications of the ACM},
+  volume={51},
+  number={1},
+  pages={107--113},
+  year={2008},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{projadam,
+  title={Project adam: Building an efficient and scalable deep learning training system},
+  author={Chilimbi, Trishul and Suzue, Yutaka and Apacible, Johnson and Kalyanaraman, Karthik},
+  booktitle={11th USENIX symposium on operating systems design and implementation (OSDI 14)},
+  pages={571--582},
+  year={2014}
+}
+
+@article{ssp,
+  title={More Effective Distributed ML via a Stale Synchronous Parallel Parameter Server},
+  author={Qirong Ho and James Cipar and Henggang Cui and Seunghak Lee and Jin Kyu Kim and Phillip B. Gibbons and Garth A. Gibson and Gregory R. Ganger and Eric P. Xing},
+  journal={Advances in neural information processing systems},
+  year={2013},
+  volume={2013},
+  pages={
+          1223-1231
+        }
+}
+
+@article{seq2seq,
+  title={Sequence to sequence learning with neural networks},
+  author={Sutskever, Ilya and Vinyals, Oriol and Le, Quoc V},
+  journal={Advances in neural information processing systems},
+  volume={27},
+  year={2014}
+}
+
+@article{lstm,
+  title={Long short-term memory},
+  author={Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  journal={Neural computation},
+  volume={9},
+  number={8},
+  pages={1735--1780},
+  year={1997},
+  publisher={MIT Press}
+}
+
+@article{sched,
+  title={Three, four, five, six, or the complexity of scheduling with communication delays},
+  author={Hoogeveen, JA and Lenstra, Jan Karel and Veltman, Bart},
+  journal={Operations Research Letters},
+  volume={16},
+  number={3},
+  pages={129--137},
+  year={1994},
+  publisher={Elsevier}
+}
+
+@article{torchfx,
+  title={torch.fx: Practical Program Capture and Transformation for Deep Learning in Python},
+  author={Reed, James and DeVito, Zachary and He, Horace and Ussery, Ansley and Ansel, Jason},
+  journal={Proceedings of Machine Learning and Systems},
+  volume={4},
+  pages={638--651},
+  year={2022}
+}
+
+@article{vgg,
+  title={Very deep convolutional networks for large-scale image recognition},
+  author={Simonyan, Karen and Zisserman, Andrew},
+  journal={arXiv preprint arXiv:1409.1556},
+  year={2014}
+}
+
+@article{cifar,
+  title={Learning multiple layers of features from tiny images},
+  author={Krizhevsky, Alex and Hinton, Geoffrey and others},
+  year={2009},
+  publisher={Toronto, ON, Canada}
+}
+
+@inproceedings{googlenet,
+  title={Going deeper with convolutions},
+  author={Szegedy, Christian and Liu, Wei and Jia, Yangqing and Sermanet, Pierre and Reed, Scott and Anguelov, Dragomir and Erhan, Dumitru and Vanhoucke, Vincent and Rabinovich, Andrew},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={1--9},
+  year={2015}
+}
+
+@article{gurobi,
+  title={The gurobi optimizer},
+  author={Bixby, Bob},
+  journal={Transp. Re-search Part B},
+  volume={41},
+  number={2},
+  pages={159--178},
+  year={2007}
+}
+
+@article{PICOS,
+  author  = {Guillaume Sagnol and Maximilian Stahlberg},
+  journal = {Journal of Open Source Software},
+  title   = {{PICOS}: A {Python} interface to conic optimization solvers},
+  year    = {2022},
+  issn    = {2475-9066},
+  month   = feb,
+  number  = {70},
+  pages   = {3915},
+  volume  = {7},
+  doi     = {10.21105/joss.03915},
+}
+
+@article{mosek,
+  title={Mosek optimization toolbox for matlab},
+  author={ApS, Mosek},
+  journal={User’s Guide and Reference Manual, Version},
+  volume={4},
+  pages={1},
+  year={2019},
+  publisher={MOSEK}
+}
+
+@online{voc2012,
+	author = "Everingham, M. and Van~Gool, L. and Williams, C. K. I. and Winn, J. and Zisserman, A.",
+	title = "The {PASCAL} {V}isual {O}bject {C}lasses {C}hallenge 2012 {(VOC2012)} {R}esults",
+	url = "http://www.pascal-network.org/challenges/VOC/voc2012/workshop/index.html"}
+
+@inproceedings{unet,
+  title={U-net: Convolutional networks for biomedical image segmentation},
+  author={Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+  booktitle={Medical Image Computing and Computer-Assisted Intervention--MICCAI 2015: 18th International Conference, Munich, Germany, October 5-9, 2015, Proceedings, Part III 18},
+  pages={234--241},
+  year={2015},
+  organization={Springer}
+}
+
+@article{deeplabv3,
+  title={Rethinking atrous convolution for semantic image segmentation},
+  author={Chen, Liang-Chieh and Papandreou, George and Schroff, Florian and Adam, Hartwig},
+  journal={arXiv preprint arXiv:1706.05587},
+  year={2017}
+}
+
+@article{nas,
+  title={Neural architecture search: A survey},
+  author={Elsken, Thomas and Metzen, Jan Hendrik and Hutter, Frank},
+  journal={The Journal of Machine Learning Research},
+  volume={20},
+  number={1},
+  pages={1997--2017},
+  year={2019},
+  publisher={JMLR. org}
+}
+
+@article{wide,
+  title={Wide residual networks},
+  author={Zagoruyko, Sergey and Komodakis, Nikos},
+  journal={arXiv preprint arXiv:1605.07146},
+  year={2016}
+}
+
+@article{etf, author = {Hwang, Jing-Jang and Chow, Yuan-Chieh and Anger, Frank D. and Lee, Chung-Yee}, title = {Scheduling Precedence Graphs in Systems with Interprocessor Communication Times}, year = {1989}, issue_date = {April 1989}, publisher = {Society for Industrial and Applied Mathematics}, address = {USA}, volume = {18}, number = {2}, issn = {0097-5397}, url = {https://doi.org/10.1137/0218016}, doi = {10.1137/0218016}, journal = {SIAM J. Comput.}, month = {apr}, pages = {244–257}, numpages = {14} }
+
+
+@inproceedings{sct,
+  title={An approximation algorithm for scheduling dependent tasks on m processors with small communication delays},
+  author={Hanen, Claire and Munier, Alix},
+  booktitle={Proceedings 1995 INRIA/IEEE Symposium on Emerging Technologies and Factory Automation. ETFA'95},
+  volume={1},
+  pages={167--189},
+  year={1995},
+  organization={IEEE}
+}

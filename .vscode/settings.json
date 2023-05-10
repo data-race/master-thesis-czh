@@ -1,0 +1,44 @@
+{
+    "latex-workshop.latex.autoBuild.run": "onSave", // 禁止自动编译
+    "latex-workshop.latex.recipe.default": "lastUsed", // 使用前一次的编译方法
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk-xe",
+            "tools": [
+                "latexmk-xe"
+            ]
+        },
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk-xe",
+            "command": "latexmk",
+            "args": [
+                "-xelatex",
+                "-time",
+                "-interaction=nonstopmode",
+                "%DOCFILE%"
+            ]
+        },
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.aux":  true,
+        "**/*.bbl": true,
+        "**/*.bcf": true,
+        "**/*.blg": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.fls": true,
+        "**/*.out": true,
+        "**/*.thm": true,
+        "**/*.toc": true,
+        "**/*.xdv": true,
+        "**/*.lof": true,
+        "**/*.lot": true
+      }
+}

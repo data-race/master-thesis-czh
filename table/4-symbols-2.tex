@@ -1,0 +1,51 @@
+% \begin{table}[h]
+% 	\centering
+% 	\caption{\sys{}约束求解问题中的变量符号表示}
+% 	\label{table:symbol}
+%     \begin{tabularx}{\linewidth}{p{3cm} p{3.2cm} X }
+%         \toprule
+%         \textbf{输出模块} & \textbf{符号表示} & \textbf{描述} \\
+%         \midrule
+%         \multirow{2}*{显存估计} & $\mathit{weight}_u$ & 节点$u$的参数所使用的显存，其中$u\in V$ \\
+%         \cmidrule{2-3}
+%         & $\mathit{size}_e$ & 边$e$的起始节点的输出变量的大小，该变量作为边$e$的终点的输入，其中$e\in E$ \\
+%         \midrule
+%         \multirow{2}*{计算代价分析} & $\mathit{FP}_{u}$ & 计算图中节点$u$的进行前向传播的计算用时，$u\in V$\\
+%         \cmidrule{2-3}
+%         & $\mathit{BP}_{u}$ &  计算图中节点$u$的进行反向传播的计算用时，$u\in V$\\
+%         \midrule
+%         通信建模 & $\mathit{Commu}(x,p_1,p_2)$ & 表示设备$p_1$和设备$p_2$之间传输数据量$x$的通信用时，如果$p_1=p_2$，则通信代价可以忽略不计。$Commu$就是设备之间的通信代价模型。 \\
+%         \bottomrule
+%     \end{tabularx}
+% \end{table}
+
+\begin{table}[h]
+	\centering
+	\caption{\sys{}约束求解问题中的变量符号表示}
+	\label{table:symbol2}
+    \begin{tabularx}{\linewidth}{p{2.8cm}  X }
+        \toprule
+        \textbf{符号名称} & \textbf{描述} \\
+        \midrule
+        $\mathcal{S}_{fp,i}$  &在一次完整的前向传播和反向传播中，节点$i$进行前向传播的开始时间。\\
+        \midrule
+        $\mathcal{S}_{bp,i}$ & 在一次完整的前向传播和反向传播中，节点$i$进行反向传播的开始时间。 \\
+        \midrule
+        $\mathcal{C}_{fp,i}$ &在一次完整的前向传播和反向传播中，节点$i$前向传播的结束时间。\\
+        \midrule
+        $\mathcal{C}_{bp,i}$ &在一次完整的前向传播和反向传播中，节点$i$反向传播的结束时间。\\
+        \midrule
+        $\mathit{FP}_i$ & 节点$i$进行前向传播的用时，该用时由\textbf{计算代价估计}模块给出。\\
+        \midrule
+        $\mathit{BP}_i$ & 节点$i$进行反向传播的用时，该用时由\textbf{计算代价估计}模块给出。\\
+        \midrule
+        $F_{\mathit{commu}}(i,j,p,q)$ & 假设节点$i$被划分到设备$p$上，节点$j$ 被划分到设备$q$上，则$i$和$j$通过设备$p$和设备$q$之间到通信链路进行通信的用时为$\mathit{F_{\mathit{commu}}}(i,j,p,q)$。因为节点$i$和节点$j$之间通信的数据量是已知的，因此该用时可以由\textbf{通信代价建模}模块给出的$\mathit{Commu}(x,p,q)$进一步计算得到。\\
+        \midrule
+        $\mathcal{X}_{i,p}$ & 用于表示划分结果的指示变量，也是待求解的变量。$\mathcal{X}_{i,p}=1$ 表示节点$i$ 被划分到了设备$p$上。\\
+        \midrule
+        $\mathit{Cap_p}$ & 设备$p$的显存容量。在进行训练前，可以通过使用NVML库 \cite{nvml}采集硬件信息得到。\\
+        \midrule
+        $\mathit{Makespan}$ & 优化目标，模型训练中单次迭代用时。 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}

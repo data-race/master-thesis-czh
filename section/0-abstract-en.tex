@@ -1,0 +1,14 @@
+In the field of deep learning, with the improvement of the performance of deep neural network models, the complexity and size of the models are also increasing. A single device is no longer capable of training giant neural network models. Therefore, researchers usually use model parallelism to partition large models onto multiple devices for distributed training.
+
+In mainstream deep learning frameworks, the partitioning of models still relies on manual intervention by users. Due to the complexity of the model structure and the heterogeneity of the underlying devices, even for experienced researchers, partitioning model manually is a very difficult task.
+
+Existing work partitions models through reinforcement learning, heuristic algorithms, constructing constrained optimization problems, and other methods, but there are still some shortcomings in these methods. For example, they may not adequately consider the underlying hardware environment, and the modeling of the model training process may not be accurate enough.
+
+To simplify the training process for giant models, especially to provide automated model partitioning functionality, we proposes a training framework for giant deep neural network models: \sys{}. Our contributions include:
+
+\begin{itemize}
+\item Implementation of an automated PyTorch model analysis method that can extract the intermediate representation of the model computation graph from a generic PyTorch model and use static and dynamic analysis methods to analyze metadata such as computation time and memory usage for each node in the computation graph.
+\item Implementation of a modeling method for the communication cost between underlying devices: for potential heterogeneous communication links between devices, automatic peer-to-peer communication testing is performed between devices, and the communication cost between devices is modeled.
+\item Implementation of a model partitioning method based on constrained optimization: based on the metadata of the computation graph and the communication cost model between devices, a constrained optimization problem is constructed and solved to partition the model with the goal of improving training efficiency.
+\item Experimental evaluation of \sys{} in real-world scenarios shows that compared to existing methods, \sys{} can effectively improve the training efficiency of large models, resulting in shorter training time.
+\end{itemize}

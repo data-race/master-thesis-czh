@@ -1,0 +1,24 @@
+\begin{table}
+	\centering
+	\caption{计算图的显存开销}
+	\label{table:model-mem}
+    \begin{tabularx}{\linewidth}{p{2.4cm} p{2.6cm} X }
+        \toprule
+        \textbf{种类} & \textbf{类型} & \textbf{描述} \\
+        \midrule
+        \multirow{2}*{节点} & 参数 & 算子中可以学习的参数，例如卷积中的卷积核 \\
+        \cmidrule{2-3}
+        & 参数梯度 & 在反向传播过程中计算出的用于更新参数的梯度，大小与对应参数大小相同，随着优化器的不同，可能还有动量与二阶动量 \\
+        \midrule
+        \multirow{4}*{边} & 模型输入 & 计算图的入口节点从数据加载器获得的输入数据批(data batch) \\
+        \cmidrule{2-3}
+        & 算子输入 & 计算图中算子的输入变量 \\
+        \cmidrule{2-3}
+        & 算子输出 & 计算图中算子的输出变量，对于该算子的后继算子来说，如果后继和该算子在同一个设备上，则该算子的输出变量等同于后继算子的输入变量 \\
+        \cmidrule{2-3}
+        & 变量梯度 & 在反向传播过程中计算出的变量梯度，用于计算参数梯度 \\
+        \midrule
+        固定开销 & CUDA上下文 & 包括CUDA运行时，cuDNN Lib加载等需要占用的显存 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}

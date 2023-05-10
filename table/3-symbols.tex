@@ -1,0 +1,20 @@
+\begin{table}[h]
+	\centering
+	\caption{模型划分模块的输入}
+	\label{table:symbol}
+    \begin{tabularx}{\linewidth}{p{3cm} p{3.2cm} X }
+        \toprule
+        \textbf{输出模块} & \textbf{符号表示} & \textbf{描述} \\
+        \midrule
+        \multirow{2}*{显存估计} & $\mathit{weight}_u$ & 节点$u$的参数所使用的显存，其中$u\in V$ \\
+        \cmidrule{2-3}
+        & $\mathit{size}_t$ & 中间变量$t$所使用的内存，通常来说，$t$对应$\mathcal{G}$中的某一条边，但是也有可能一个变量对应多个边，例如一个节点的输出变量可能是多个节点的输入边量。\\
+        \midrule
+        \multirow{2}*{计算代价分析} & $\mathit{FP}_{u}$ & 计算图中节点$u$的进行前向传播的计算用时，$u\in V$\\
+        \cmidrule{2-3}
+        & $\mathit{BP}_{u}$ &  计算图中节点$u$的进行反向传播的计算用时，$u\in V$\\
+        \midrule
+        通信建模 & $\mathit{Commu}(x,p,q)$ & 表示设备$p$和设备$q$之间传输数据量$x$的通信用时，如果$p=q$，则通信代价可以忽略不计。$Commu$就是设备之间的通信代价模型。 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}

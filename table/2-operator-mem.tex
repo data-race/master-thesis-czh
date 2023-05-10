@@ -1,0 +1,16 @@
+\begin{table}
+	\centering
+	\caption{几种算子模型参数显存开销}
+	\label{table:operator-mem}
+    \begin{tabularx}{\linewidth}{ p{2.4cm} p{3.8cm} X }
+        \toprule
+        \textbf{算子} & \textbf{参数大小} & \textbf{描述} \\
+        \midrule
+        Conv2D & $C_{in} \times C_{out} \times K_{h} \times K_{w}$ & 二维卷积算子的模型参数量等于卷积核的数目乘以每个卷积核的大小 \\
+        \midrule
+        Linear  & $F_{in} \times F_{out} + F_{out}$ & 线性变换算子的模型参数量等于线性变换矩阵大小加上偏置大小 \\
+        \midrule
+        BatchNorm2D & $2\times C $ & BatchNorm2D对输入执行批归一化，也就是计算$y=\frac{x-E(x)}{\sqrt{var(x)+\epsilon}} \times \gamma + \beta$，对于输入数据的每个通道，都需要存储相应的$\gamma$和$\beta$ \\
+        \bottomrule
+    \end{tabularx}
+\end{table}

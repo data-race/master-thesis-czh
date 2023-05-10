@@ -1,0 +1,23 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'njuthesis-sample.blg'
+[35] biber-darwin:340> INFO - === Thu May 11, 2023, 14:18:40
+[43] Biber.pm:419> INFO - Reading 'njuthesis-sample.bcf'
+[111] Biber.pm:979> INFO - Found 70 citekeys in bib section 0
+[118] Biber.pm:4419> INFO - Processing section 0
+[123] Biber.pm:4610> INFO - Looking for bibtex file 'njuthesis-sample.bib' for section 0
+[125] bibtex.pm:1713> INFO - LaTeX decoding ...
+[152] bibtex.pm:1519> INFO - Found BibTeX data source 'njuthesis-sample.bib'
+[707] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[707] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[707] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[707] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[736] bbl.pm:660> INFO - Writing 'njuthesis-sample.bbl' with encoding 'UTF-8'
+[779] bbl.pm:763> INFO - Output to njuthesis-sample.bbl
+[779] Biber.pm:131> WARN - online entry 'cuda' (njuthesis-sample.bib): Invalid format 'Accessed 04-Jan-2023' of date field 'urldate' - ignoring
+[779] Biber.pm:131> WARN - online entry 'nvlink' (njuthesis-sample.bib): Invalid format 'Accessed 04-Jan-2023' of date field 'urldate' - ignoring
+[779] Biber.pm:131> WARN - online entry 'infiniband' (njuthesis-sample.bib): Invalid format 'Accessed 04-Jan-2023' of date field 'urldate' - ignoring
+[779] Biber.pm:131> WARN - online entry 'copilot' (njuthesis-sample.bib): Invalid format 'Accessed 04-Jan-2023' of date field 'urldate' - ignoring
+[779] Biber.pm:131> WARN - online entry 'pytorch-pipeline' (njuthesis-sample.bib): Invalid format 'Accessed 04-Jan-2023' of date field 'urldate' - ignoring
+[779] Biber.pm:131> WARN - online entry 'nvml' (njuthesis-sample.bib): Invalid format 'Accessed 04-Jan-2023' of date field 'urldate' - ignoring
+[779] Biber.pm:131> WARN - legacy month field 'apr' in entry 'etf' is not an integer - this will probably not sort properly.
+[779] Biber.pm:133> INFO - WARNINGS: 7

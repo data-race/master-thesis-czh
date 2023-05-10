@@ -1,0 +1,26 @@
+\begin{table}[h!] % just use this specifier if really needed.
+    \centering
+    \caption{设备之间的通信拓扑}\label{table:topo}
+    \begin{threeparttable}
+    \begin{tabular}{ |p{1.5cm}| p{1.5cm}| p{1.5cm}| p{1.5cm}| p{1.5cm}| p{1.5cm}| }
+        \hline
+        & \textbf{GPU-0} & \textbf{GPU-1}& \textbf{GPU-2}& \textbf{GPU-3}& \textbf{GPU-4} \\
+        \hline
+        \textbf{GPU-0} & \texttt{X} & \texttt{PIX} & \texttt{NODE}&  \texttt{NODE}& \texttt{NODE} \\
+        \hline
+        \textbf{GPU-1} & \texttt{PIX} & \texttt{X} & \texttt{NODE} & \texttt{NODE} & \texttt{NODE} \\
+        \hline
+        \textbf{GPU-2} & \texttt{NODE} & \texttt{NODE} & \texttt{X} & \texttt{PIX} & \texttt{PIX} \\
+        \hline
+        \textbf{GPU-3} & \texttt{NODE}& \texttt{NODE} & \texttt{PIX} & \texttt{X} & \texttt{PIX} \\
+        \hline
+        \textbf{GPU-4} & \texttt{NODE}& \texttt{NODE} & \texttt{PIX}& \texttt{PIX} & \texttt{X}\\
+        \hline
+    \end{tabular}
+    \begin{tablenotes}
+        \item[1] \texttt{X}: 设备本身。
+        \item[2] \texttt{PIX}: 设备之间通过单个PCIe switch连接。
+        \item[3] \texttt{NODE}: 设备之间通过PCIe Host Bridge 在同一个NUMA节点内连接。
+    \end{tablenotes}
+    \end{threeparttable}
+\end{table}

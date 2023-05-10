@@ -1,0 +1,34 @@
+\begin{table}
+	\centering
+	\caption{ONNX与PyTorch的部分算子对应}
+	\label{table:onnx-operators}
+	\begin{tabularx}{\linewidth}{ p{2cm}  p{2.2cm}  p{5.8cm}  X  }
+		\toprule
+		\textbf{算子} & \textbf{输入} & \textbf{描述} & \textbf{对应PyTorch} \\
+        \midrule
+        Transpose & 
+        input:tensor; perm:tuple; &
+        根据perm对input的维度进行重新排列,功能类似于numpy中的np.permute
+        & permute \\
+        \midrule
+        Flatten & 
+        input:tensor; axis:int; &
+        对输入张量input进行扁平化操作，输出output为2D矩阵。axis指定输出矩阵第一维的结束维度。
+        例如输入张量的形状为$(a,b,c,d)$，axis=2,则输出矩阵的形状为$(ab, cd)$&
+        flatten
+        \\
+        \midrule
+        Upsample &
+        input:tensor; scale:tensor;&
+        对输入张量进行上采样，scale是一个长度等于input维数的张量，每一项指定了input的一个维度进行上采样时的缩放参数。例如对形状为$(a,b,c)$的输入张量进行上采样，scale=$(2,3,4)$，则输出张量的形状为$(2a,3b,4c)。$&
+        interpolate
+        \\
+        \midrule
+        Conv &
+        input:tensor; w:tensor; bias:tensor; &
+        使用w作为卷积核权重对输入张量input进行卷积运算，如果bias非空，则结果加上bias。&
+        nn.Conv1d; nn.Conv2d; nn.Conv3d;
+        \\
+        \bottomrule
+	\end{tabularx}
+\end{table}

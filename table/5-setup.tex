@@ -1,0 +1,24 @@
+\begin{table}[!htbp]
+	\centering
+	\caption{服务器配置}
+	\label{table:setup}
+    \begin{tabularx}{0.9\linewidth}{ p{2.0cm} p{6.8cm} X}
+        \toprule
+        \textbf{配置项} & \textbf{型号} & \textbf{规格} \\
+        \midrule
+        GPU & Nvidia® TITAN RTX 24GB & 5 \\
+        \midrule
+        CPU & Intel® Xeon Gold 5118 @ 2.30GHz & 2 \\
+        \midrule
+        内存 & Samsung M393A4K40BB2-CTD  & 32GB $\times$ 12 \\
+        \midrule
+        操作系统 & Ubuntu & 4.15.0-88-generic \\
+        \midrule
+        \multirow{3}*{软件依赖} & PyTorch & 1.8.1 \\
+        \cmidrule{2-3}
+        & PICOS & 2.4.11 \\
+        \cmidrule{2-3}
+        & Gurobi & v10.0.0rc2 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
