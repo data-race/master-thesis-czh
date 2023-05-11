@@ -64,15 +64,6 @@ PCIe(Peripheral Component Interconect Express) 是一种高速串行接口总线
 \label{sec:performace}
 \subsection{对比方法}
 为了验证\sys{}对于使用模型并行化对大模型进行训练的效果，我们引入了其他四种方法和\sys{}进行对比。
-\begin{align}
-	& \text{min} & & \mathit{Makespan} \label{eq:p-target-2} & \\
-	& \text{s.t.} & & \mathcal{S}_{i}=0 &\Gamma^{-}(i)=0, i\in \mathcal{V} \nonumber\\
-	& & & \mathcal{C}_{i} = \mathcal{S}_{i} + \mathit{p}_i & \forall i\in \mathcal{V} \nonumber\\
-	& & & \mathit{Makespan} \ge \mathcal{C}_{i} & \forall i\in \mathcal{V}\nonumber\\
-	& & & \sum_{p=1}^{m} \mathcal{X}_{i,p}=1, \mathcal{X}_{i,p}\in\{0,1\} & \forall i\in \mathcal{V} \nonumber\\
-	& & & \mathit{Commu}_{i,j} = \sum_{p\neq q}\mathcal{X}_{i,p}\mathcal{X}_{j,q}F_{\mathit{commu}}(i,j,p,q) & \forall \left\langle i,j\right\rangle \in \mathcal{E} \nonumber\\
-	& & & \mathcal{S}_{j} \ge \mathcal{C}_{i} + \mathit{Commu}_{i,j}&\forall \left\langle i,j\right\rangle \in \mathcal{E} \nonumber
-\end{align}
 
 \begin{itemize}
 	\item \texttt{m-TOPO}: \texttt{m-TOPO}是Baechi\upcite{baechi}提出的三种模型划分放置算法之一，全称为Memory-Constrained Topological Sort Placer。该算法的思路是对计算图中所有的节点进行拓扑排序，然后依次放置在当前设备上，直到达到当前设备的内存容量限制，再转向下一个设备继续放置。Baechi中将设备的内存容量限制设置为$\sum_{i\in\{n\}}d_i / m + \mathrm{max}_{i\in\{n\}} d_i$，其中$m$为设备数目，$d_i$为节点$i$的内存用量。通过这种方式，可以控制每个设备具有近似的内存用量。
@@ -84,10 +75,18 @@ PCIe(Peripheral Component Interconect Express) 是一种高速串行接口总线
 	式\ref{eq:etf}中，节点$i$在设备$p$上的最早可调度时间为设备$p$的空闲时间和节点$i$的所有前驱节点$j$完成用时中的最大值。
 	\texttt{m-ETF}依次从队列中取出当前可调度时间最小的组合$(i,p)$，如果设备$p$的剩余内存可以放置节点$i$，则将节点$i$放置到设备$p$，并更新设备$p$的空闲时间$\mathit{free}(p)$和$i$的所有后继的最早可调度时间。重复这个过程直到所有节点都被调度。
 
-	\item \texttt{m-SCT}: 该算法是在经典的调度算法最小通信时间调度\upcite{sct}上改进得到。在\texttt{m-SCT}中，首先通过整数线性规划(Integer Linear Program)以最小化整体完成时间为目标，为每个节点寻找一个最优子节点，并优先将节点和其最优子节点放置在同一个设备上。
+	\item \texttt{m-SCT}: 该算法是在经典的调度算法最小通信时间调度\upcite{sct}上改进得到。在\texttt{m-SCT}中，通过整数线性规划以最小化整体完成时间为目标，为每个节点寻找一个最优子节点，并优先将节点和其最优子节点放置在同一个设备上。
 	\item \texttt{Pesto}: 同时，我们也对比了\texttt{Pesto}和我们的方法，由\texttt{Pesto}的原始约束优化问题(\ref{sec:pesto})只能适用于设备数目为2的情况，我们对其进行了扩展。我们采用和\sys{}类似的方法，使用多个指示变量来表示节点在设备上的放置。修改后的\texttt{Pesto}的约束优化问题定义为式\ref{eq:p-target-2}。
 \end{itemize}
 
+\begin{align}
+	& \text{min} & & \mathit{Makespan} \label{eq:p-target-2} & \\
+	& \text{s.t.} & & \mathcal{S}_{i}=0 &\Gamma^{-}(i)=0, i\in \mathcal{V} \nonumber\\
+	& & & \mathcal{C}_{i} = \mathcal{S}_{i} + \mathit{p}_i,\ \mathit{Makespan} \ge \mathcal{C}_{i} & \forall i\in \mathcal{V} \nonumber\\
+	& & & \sum_{p=1}^{m} \mathcal{X}_{i,p}=1, \mathcal{X}_{i,p}\in\{0,1\} & \forall i\in \mathcal{V} \nonumber\\
+	& & & \mathit{Commu}_{i,j} = \sum_{p\neq q}\mathcal{X}_{i,p}\mathcal{X}_{j,q}F_{\mathit{commu}}(i,j,p,q) & \forall \left\langle i,j\right\rangle \in \mathcal{E} \nonumber\\
+	& & & \mathcal{S}_{j} \ge \mathcal{C}_{i} + \mathit{Commu}_{i,j}&\forall \left\langle i,j\right\rangle \in \mathcal{E} \nonumber
+\end{align}
 
 
 

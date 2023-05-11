@@ -248,6 +248,7 @@
 % 页眉页脚的字体样式
 % \njusetformat{header}{\small\kaishu}
 % \njusetformat{footer}{}
+\njusetformat{chapter}{\zihao{-2}\sffamily\centering}
 
 % 一些灵活调整
 % \njusetname{notation}{术语表} % 更改符号表名称
