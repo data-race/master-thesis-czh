@@ -34,11 +34,11 @@ $\mathcal{G}=\langle \mathcal{V}, \mathcal{E}, \mathcal{V}_{\mathit{in}}, \mathc
 数据吞吐量表示了一个系统处理数据的速度，通常表示为单位时间内系统处理的数据量，当处理的数据量很大时，提高数据吞吐量就十分有必要。
 在深度神经网络的训练中，数据吞吐量通常指单位时间训练完成的样本的数目，比如在视觉任务中，可以是每秒钟训练的图片数目，在自然语言处理任务中，可以是每秒钟训练的词向量数目。
 提升数据吞吐量可以直接提升训练速度，缩短训练时间，因此模型划分模块以提升数据吞吐量为目标进行模型划分。
-式 \ref{eq:target}描述了模型划分的目标，即在给定的硬件和计算图时，寻找可以使数据吞吐量（式中由$\mathcal{F}_{throughput}$表示）最大的划分，并满足显存约束。
+式 \ref{eq:target}描述了模型划分的目标，即在给定的硬件和计算图时，寻找可以使数据吞吐量（式中由$\mathcal{F}_{\mathit{throughput}}$表示）最大的划分，并满足显存约束。
 \begin{equation}
 	\label{eq:target}
 	\begin{aligned}
-		& \argmax_{f:\mathcal{V}\mapsto D} & \mathcal{F}_{throughput}(\mathcal{G}, D, f:\mathcal{V}\mapsto D) \\
+		& \argmax_{f:\mathcal{V}\mapsto D} & \mathcal{F}_{\mathit{throughput}}(\mathcal{G}, D, f:\mathcal{V}\mapsto D) \\
 		& \mathrm{s.t.} &\mathit{Memory}\ \mathit{Constraints}
 	\end{aligned}
 \end{equation}
@@ -46,7 +46,7 @@ $\mathcal{G}=\langle \mathcal{V}, \mathcal{E}, \mathcal{V}_{\mathit{in}}, \mathc
 \begin{equation}
 	\label{eq:target2}
 	\begin{aligned}
-		& \argmin_{f:\mathcal{V}\mapsto D} & \mathcal{F}_{iteration}(\mathcal{G}, D, f:\mathcal{V}\mapsto D) \\
+		& \argmin_{f:\mathcal{V}\mapsto D} & \mathcal{F}_{\mathit{iteration}}(\mathcal{G}, D, f:\mathcal{V}\mapsto D) \\
 		& \mathrm{s.t.} &\mathit{Memory}\ \mathit{Constraints}
 	\end{aligned}
 \end{equation}

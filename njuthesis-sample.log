@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.10)  11 MAY 2023 14:18
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.10)  11 MAY 2023 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -565,25 +565,117 @@ Package: ulem 2019/11/18
 \c__xeCJK_filll_skip=\skip89
 ) (./njuthesis-graduate.def
 File: njuthesis-graduate.def 2023/05/03 v1.2.1 Graduate definition file for njuthesis
-\c__nju_clabelwd_dim=\dimen290
-\c__nju_clabelwdi_dim=\dimen291
-\c__nju_clabelwdii_dim=\dimen292
-\c__nju_crulewd_dim=\dimen293
-\c__nju_crulewdi_dim=\dimen294
-\c__nju_ctypewd_dim=\dimen295
-\c__nju_emblemwd_dim=\dimen296
-\c__nju_emblemwdii_dim=\dimen297
-\c__nju_namewd_dim=\dimen298
-\c__nju_rulehti_dim=\dimen299
-\c__nju_rulehtii_dim=\dimen300
-\c__nju_ruledpi_dim=\dimen301
-\c__nju_ruledpii_dim=\dimen302
-\c__nju_ruledpiii_dim=\dimen303
-\c__nju_hsep_dim=\dimen304
-\c__nju_vsep_dim=\dimen305
-\c__nju_chapterbefore_dim=\dimen306
-\c__nju_chapterafter_dim=\dimen307
-\c__nju_fnhang_dim=\dimen308
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/tabularray/tabularray.sty
+Package: tabularray 2023-03-01 v2023A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count336
+\l__tblr_c_int=\count337
+\l__tblr_r_int=\count338
+\l__tblr_d_dim=\dimen290
+\l__tblr_h_dim=\dimen291
+\l__tblr_o_dim=\dimen292
+\l__tblr_p_dim=\dimen293
+\l__tblr_q_dim=\dimen294
+\l__tblr_r_dim=\dimen295
+\l__tblr_s_dim=\dimen296
+\l__tblr_t_dim=\dimen297
+\l__tblr_v_dim=\dimen298
+\l__tblr_w_dim=\dimen299
+\l__tblr_a_box=\box68
+\l__tblr_b_box=\box69
+\l__tblr_c_box=\box70
+\l__tblr_d_box=\box71
+\g__tblr_table_count_int=\count339
+\c@rownum=\count340
+\c@colnum=\count341
+\c@rowcount=\count342
+\c@colcount=\count343
+\abovesep=\dimen300
+\belowsep=\dimen301
+\leftsep=\dimen302
+\rightsep=\dimen303
+\g_tblr_level_int=\count344
+\g__tblr_data_row_key_count_int=\count345
+\g__tblr_data_column_key_count_int=\count346
+\g__tblr_data_cell_key_count_int=\count347
+\g__tblr_array_int=\count348
+\l__tblr_key_count_int=\count349
+\l__tblr_key_quotient_int=\count350
+\l__tblr_key_quotient_two_int=\count351
+\l__tblr_key_remainder_int=\count352
+\g__tblr_data_str_value_count_int=\count353
+\rulewidth=\dimen304
+\l__tblr_strut_dp_dim=\dimen305
+\l__tblr_strut_ht_dim=\dimen306
+\g__tblr_cell_wd_dim=\dimen307
+\g__tblr_cell_ht_dim=\dimen308
+\g__tblr_cell_head_dim=\dimen309
+\g__tblr_cell_foot_dim=\dimen310
+\l__column_target_dim=\dimen311
+\l__tblr_caption_box=\box72
+\l__tblr_caption_left_box=\box73
+\l__tblr_row_head_box=\box74
+\l__tblr_row_foot_box=\box75
+\l__tblr_row_head_foot_dim=\dimen312
+\tablewidth=\dimen313
+\l__tblr_table_firsthead_box=\box76
+\l__tblr_table_middlehead_box=\box77
+\l__tblr_table_lasthead_box=\box78
+\l__tblr_table_firstfoot_box=\box79
+\l__tblr_table_middlefoot_box=\box80
+\l__tblr_table_lastfoot_box=\box81
+\l__tblr_remain_height_dim=\dimen314
+\l__tblr_long_from_int=\count354
+\l__tblr_long_to_int=\count355
+\l__tblr_curr_i_int=\count356
+\l__tblr_prev_i_int=\count357
+\l__tblr_table_page_int=\count358
+\l__tblr_table_head_box=\box82
+\l__tblr_table_foot_box=\box83
+\l__tblr_table_head_foot_dim=\dimen315
+\l__tblr_table_head_body_foot_dim=\dimen316
+\l__tblr_table_box=\box84
+\l__tblr_table_hlines_box=\box85
+\l__tblr_hline_box=\box86
+\l__tblr_row_box=\box87
+\l__tblr_col_o_wd_dim=\dimen317
+\l__tblr_col_b_wd_dim=\dimen318
+\l__tblr_hline_leftskip_dim=\dimen319
+\l__tblr_hline_rightskip_dim=\dimen320
+\l__tblr_row_ht_dim=\dimen321
+\l__tblr_row_dp_dim=\dimen322
+\l__tblr_row_abovesep_dim=\dimen323
+\l__tblr_row_belowsep_dim=\dimen324
+\l__tblr_row_vlines_box=\box88
+\l__tblr_vline_box=\box89
+\l__tblr_cell_box=\box90
+\l__row_upper_dim=\dimen325
+\l__row_lower_dim=\dimen326
+\l__row_vpace_dim=\dimen327
+\l__tblr_vline_aboveskip_dim=\dimen328
+\l__tblr_vline_belowskip_dim=\dimen329
+\l__tblr_cell_wd_dim=\dimen330
+\l__tblr_cell_ht_dim=\dimen331
+\l__tblr_diag_box=\box91
+)
+\c__nju_clabelwd_dim=\dimen332
+\c__nju_clabelwdi_dim=\dimen333
+\c__nju_clabelwdii_dim=\dimen334
+\c__nju_crulewd_dim=\dimen335
+\c__nju_crulewdi_dim=\dimen336
+\c__nju_ctypewd_dim=\dimen337
+\c__nju_emblemwd_dim=\dimen338
+\c__nju_emblemwdii_dim=\dimen339
+\c__nju_namewd_dim=\dimen340
+\c__nju_rulehti_dim=\dimen341
+\c__nju_rulehtii_dim=\dimen342
+\c__nju_ruledpi_dim=\dimen343
+\c__nju_ruledpii_dim=\dimen344
+\c__nju_ruledpiii_dim=\dimen345
+\c__nju_hsep_dim=\dimen346
+\c__nju_vsep_dim=\dimen347
+\c__nju_chapterbefore_dim=\dimen348
+\c__nju_chapterafter_dim=\dimen349
+\c__nju_fnhang_dim=\dimen350
 )
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(1)/m/n on input line 1123.
@@ -599,6 +691,10 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/CourierNew(1)/m/n on input line 1123.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/CourierNew(1)/b/n on input line 1123.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count359
+)
 LaTeX Info: Redefining \mathellipsis on input line 1659.
 \g__nju_abs_title_left_skip=\skip90
 )
@@ -612,49 +708,49 @@ Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
  (/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count336
+\c@float@type=\count360
 \float@exts=\toks45
-\float@box=\box68
+\float@box=\box92
 \@float@everytoks=\toks46
-\@floatcapt=\box69
+\@floatcapt=\box93
 )
 \@float@every@algorithm=\toks47
-\c@algorithm=\count337
+\c@algorithm=\count361
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count338
-\c@ALC@line=\count339
-\c@ALC@rem=\count340
-\c@ALC@depth=\count341
+\c@ALC@unique=\count362
+\c@ALC@line=\count363
+\c@ALC@rem=\count364
+\c@ALC@depth=\count365
 \ALC@tlm=\skip91
 \algorithmicindent=\skip92
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count342
-\lst@gtempboxa=\box70
+\lst@mode=\count366
+\lst@gtempboxa=\box94
 \lst@token=\toks48
-\lst@length=\count343
-\lst@currlwidth=\dimen309
-\lst@column=\count344
-\lst@pos=\count345
-\lst@lostspace=\dimen310
-\lst@width=\dimen311
-\lst@newlines=\count346
-\lst@lineno=\count347
-\lst@maxwidth=\dimen312
+\lst@length=\count367
+\lst@currlwidth=\dimen351
+\lst@column=\count368
+\lst@pos=\count369
+\lst@lostspace=\dimen352
+\lst@width=\dimen353
+\lst@newlines=\count370
+\lst@lineno=\count371
+\lst@maxwidth=\dimen354
  (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count348
-\lst@skipnumbers=\count349
-\lst@framebox=\box71
+\c@lstnumber=\count372
+\lst@skipnumbers=\count373
+\lst@framebox=\box95
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
  (/usr/local/texlive/2023/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
 Package: xeCJK-listings 2022/08/05 v3.9.1 xeCJK patch file for listings
-\l__xeCJK_listings_max_char_int=\count350
-\l__xeCJK_listings_flag_int=\count351
+\l__xeCJK_listings_max_char_int=\count374
+\l__xeCJK_listings_flag_int=\count375
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
  (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -674,114 +770,143 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
  (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen313
-\ar@mcellbox=\box72
-\extrarowheight=\dimen314
+\col@sep=\dimen355
+\ar@mcellbox=\box96
+\extrarowheight=\dimen356
 \NC@list=\toks49
 \extratabsurround=\skip93
 \backup@length=\skip94
-\ar@cellbox=\box73
+\ar@cellbox=\box97
 )
-\rotheadsize=\dimen315
-\c@nlinenum=\count352
+\rotheadsize=\dimen357
+\c@nlinenum=\count376
 \TeXr@lab=\toks50
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box74
+\@tempboxb=\box98
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 \everycr=\toks51
 \minrowclearance=\skip95
-\rownum=\count353
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 239.
-\c@subfigure=\count354
+\c@subfigure=\count377
 Package caption Info: New subtype `subtable' on input line 239.
-\c@subtable=\count355
+\c@subtable=\count378
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen316
-\TX@old@table=\dimen317
-\TX@old@col=\dimen318
-\TX@target=\dimen319
-\TX@delta=\dimen320
-\TX@cols=\count356
+\TX@col@width=\dimen358
+\TX@old@table=\dimen359
+\TX@old@col=\dimen360
+\TX@target=\dimen361
+\TX@delta=\dimen362
+\TX@cols=\count379
 \TX@ftn=\toks52
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip96
-\multirow@cntb=\count357
+\multirow@cntb=\count380
 \multirow@dima=\skip97
-\bigstrutjot=\dimen321
+\bigstrutjot=\dimen363
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count381
+\calc@Bcount=\count382
+\calc@Adimen=\dimen364
+\calc@Bdimen=\dimen365
+\calc@Askip=\skip98
+\calc@Bskip=\skip99
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count383
+\calc@Cskip=\skip100
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen366
+\ESO@tempdimb=\dimen367
+)
+\AM@pagewidth=\dimen368
+\AM@pageheight=\dimen369
+\AM@fboxrule=\dimen370
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/ppxetex.def
+File: ppxetex.def 2022/12/19 v0.5x Pdfpages driver for XeTeX (AM)
+)
+\pdfpages@includegraphics@status=\count384
+\AM@pagebox=\box99
+\AM@global@opts=\toks53
+\AM@pagecnt=\count385
+\AM@toc@title=\toks54
+\AM@lof@heading=\toks55
+\c@AM@survey=\count386
+\AM@templatesizebox=\box100
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
- (/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count358
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/logreq/logreq.sty
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count359
+\lrq@indent=\count387
  (/usr/local/texlive/2023/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count360
-\c@listtotal=\count361
-\c@listcount=\count362
-\c@liststart=\count363
-\c@liststop=\count364
-\c@citecount=\count365
-\c@citetotal=\count366
-\c@multicitecount=\count367
-\c@multicitetotal=\count368
-\c@instcount=\count369
-\c@maxnames=\count370
-\c@minnames=\count371
-\c@maxitems=\count372
-\c@minitems=\count373
-\c@citecounter=\count374
-\c@maxcitecounter=\count375
-\c@savedcitecounter=\count376
-\c@uniquelist=\count377
-\c@uniquename=\count378
-\c@refsection=\count379
-\c@refsegment=\count380
-\c@maxextratitle=\count381
-\c@maxextratitleyear=\count382
-\c@maxextraname=\count383
-\c@maxextradate=\count384
-\c@maxextraalpha=\count385
-\c@abbrvpenalty=\count386
-\c@highnamepenalty=\count387
-\c@lownamepenalty=\count388
-\c@maxparens=\count389
-\c@parenlevel=\count390
-\blx@tempcnta=\count391
-\blx@tempcntb=\count392
-\blx@tempcntc=\count393
-\c@blx@maxsection=\count394
-\blx@maxsegment@0=\count395
-\blx@notetype=\count396
-\blx@parenlevel@text=\count397
-\blx@parenlevel@foot=\count398
-\blx@sectionciteorder@0=\count399
-\blx@sectionciteorderinternal@0=\count400
-\blx@entrysetcounter=\count401
-\blx@biblioinstance=\count402
-\labelnumberwidth=\skip98
-\labelalphawidth=\skip99
-\biblabelsep=\skip100
-\bibitemsep=\skip101
-\bibnamesep=\skip102
-\bibinitsep=\skip103
-\bibparsep=\skip104
-\bibhang=\skip105
+\c@tabx@nest=\count388
+\c@listtotal=\count389
+\c@listcount=\count390
+\c@liststart=\count391
+\c@liststop=\count392
+\c@citecount=\count393
+\c@citetotal=\count394
+\c@multicitecount=\count395
+\c@multicitetotal=\count396
+\c@instcount=\count397
+\c@maxnames=\count398
+\c@minnames=\count399
+\c@maxitems=\count400
+\c@minitems=\count401
+\c@citecounter=\count402
+\c@maxcitecounter=\count403
+\c@savedcitecounter=\count404
+\c@uniquelist=\count405
+\c@uniquename=\count406
+\c@refsection=\count407
+\c@refsegment=\count408
+\c@maxextratitle=\count409
+\c@maxextratitleyear=\count410
+\c@maxextraname=\count411
+\c@maxextradate=\count412
+\c@maxextraalpha=\count413
+\c@abbrvpenalty=\count414
+\c@highnamepenalty=\count415
+\c@lownamepenalty=\count416
+\c@maxparens=\count417
+\c@parenlevel=\count418
+\blx@tempcnta=\count419
+\blx@tempcntb=\count420
+\blx@tempcntc=\count421
+\c@blx@maxsection=\count422
+\blx@maxsegment@0=\count423
+\blx@notetype=\count424
+\blx@parenlevel@text=\count425
+\blx@parenlevel@foot=\count426
+\blx@sectionciteorder@0=\count427
+\blx@sectionciteorderinternal@0=\count428
+\blx@entrysetcounter=\count429
+\blx@biblioinstance=\count430
+\labelnumberwidth=\skip101
+\labelalphawidth=\skip102
+\biblabelsep=\skip103
+\bibitemsep=\skip104
+\bibnamesep=\skip105
+\bibinitsep=\skip106
+\bibparsep=\skip107
+\bibhang=\skip108
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language87
-\c@mincomprange=\count403
-\c@maxcomprange=\count404
-\c@mincompwidth=\count405
+\c@mincomprange=\count431
+\c@maxcomprange=\count432
+\c@mincompwidth=\count433
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -791,88 +916,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'gb7714-2015.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count406
-\c@savedafterword=\count407
-\c@annotator=\count408
-\c@savedannotator=\count409
-\c@author=\count410
-\c@savedauthor=\count411
-\c@bookauthor=\count412
-\c@savedbookauthor=\count413
-\c@commentator=\count414
-\c@savedcommentator=\count415
-\c@editor=\count416
-\c@savededitor=\count417
-\c@editora=\count418
-\c@savededitora=\count419
-\c@editorb=\count420
-\c@savededitorb=\count421
-\c@editorc=\count422
-\c@savededitorc=\count423
-\c@foreword=\count424
-\c@savedforeword=\count425
-\c@holder=\count426
-\c@savedholder=\count427
-\c@introduction=\count428
-\c@savedintroduction=\count429
-\c@namea=\count430
-\c@savednamea=\count431
-\c@nameb=\count432
-\c@savednameb=\count433
-\c@namec=\count434
-\c@savednamec=\count435
-\c@translator=\count436
-\c@savedtranslator=\count437
-\c@shortauthor=\count438
-\c@savedshortauthor=\count439
-\c@shorteditor=\count440
-\c@savedshorteditor=\count441
-\c@labelname=\count442
-\c@savedlabelname=\count443
-\c@institution=\count444
-\c@savedinstitution=\count445
-\c@lista=\count446
-\c@savedlista=\count447
-\c@listb=\count448
-\c@savedlistb=\count449
-\c@listc=\count450
-\c@savedlistc=\count451
-\c@listd=\count452
-\c@savedlistd=\count453
-\c@liste=\count454
-\c@savedliste=\count455
-\c@listf=\count456
-\c@savedlistf=\count457
-\c@location=\count458
-\c@savedlocation=\count459
-\c@organization=\count460
-\c@savedorganization=\count461
-\c@origlocation=\count462
-\c@savedoriglocation=\count463
-\c@origpublisher=\count464
-\c@savedorigpublisher=\count465
-\c@publisher=\count466
-\c@savedpublisher=\count467
-\c@language=\count468
-\c@savedlanguage=\count469
-\c@origlanguage=\count470
-\c@savedoriglanguage=\count471
-\c@pageref=\count472
-\c@savedpageref=\count473
-\shorthandwidth=\skip106
-\shortjournalwidth=\skip107
-\shortserieswidth=\skip108
-\shorttitlewidth=\skip109
-\shortauthorwidth=\skip110
-\shorteditorwidth=\skip111
-\locallabelnumberwidth=\skip112
-\locallabelalphawidth=\skip113
-\localshorthandwidth=\skip114
-\localshortjournalwidth=\skip115
-\localshortserieswidth=\skip116
-\localshorttitlewidth=\skip117
-\localshortauthorwidth=\skip118
-\localshorteditorwidth=\skip119
+\c@afterword=\count434
+\c@savedafterword=\count435
+\c@annotator=\count436
+\c@savedannotator=\count437
+\c@author=\count438
+\c@savedauthor=\count439
+\c@bookauthor=\count440
+\c@savedbookauthor=\count441
+\c@commentator=\count442
+\c@savedcommentator=\count443
+\c@editor=\count444
+\c@savededitor=\count445
+\c@editora=\count446
+\c@savededitora=\count447
+\c@editorb=\count448
+\c@savededitorb=\count449
+\c@editorc=\count450
+\c@savededitorc=\count451
+\c@foreword=\count452
+\c@savedforeword=\count453
+\c@holder=\count454
+\c@savedholder=\count455
+\c@introduction=\count456
+\c@savedintroduction=\count457
+\c@namea=\count458
+\c@savednamea=\count459
+\c@nameb=\count460
+\c@savednameb=\count461
+\c@namec=\count462
+\c@savednamec=\count463
+\c@translator=\count464
+\c@savedtranslator=\count465
+\c@shortauthor=\count466
+\c@savedshortauthor=\count467
+\c@shorteditor=\count468
+\c@savedshorteditor=\count469
+\c@labelname=\count470
+\c@savedlabelname=\count471
+\c@institution=\count472
+\c@savedinstitution=\count473
+\c@lista=\count474
+\c@savedlista=\count475
+\c@listb=\count476
+\c@savedlistb=\count477
+\c@listc=\count478
+\c@savedlistc=\count479
+\c@listd=\count480
+\c@savedlistd=\count481
+\c@liste=\count482
+\c@savedliste=\count483
+\c@listf=\count484
+\c@savedlistf=\count485
+\c@location=\count486
+\c@savedlocation=\count487
+\c@organization=\count488
+\c@savedorganization=\count489
+\c@origlocation=\count490
+\c@savedoriglocation=\count491
+\c@origpublisher=\count492
+\c@savedorigpublisher=\count493
+\c@publisher=\count494
+\c@savedpublisher=\count495
+\c@language=\count496
+\c@savedlanguage=\count497
+\c@origlanguage=\count498
+\c@savedoriglanguage=\count499
+\c@pageref=\count500
+\c@savedpageref=\count501
+\shorthandwidth=\skip109
+\shortjournalwidth=\skip110
+\shortserieswidth=\skip111
+\shorttitlewidth=\skip112
+\shortauthorwidth=\skip113
+\shorteditorwidth=\skip114
+\locallabelnumberwidth=\skip115
+\locallabelalphawidth=\skip116
+\localshorthandwidth=\skip117
+\localshortjournalwidth=\skip118
+\localshortserieswidth=\skip119
+\localshorttitlewidth=\skip120
+\localshortauthorwidth=\skip121
+\localshorteditorwidth=\skip122
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/blx-unicode.def)
@@ -885,19 +1010,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count474
-\c@textcitetotal=\count475
-\c@textcitemaxnames=\count476
-\c@biburlbigbreakpenalty=\count477
-\c@biburlbreakpenalty=\count478
-\c@biburlnumpenalty=\count479
-\c@biburlucpenalty=\count480
-\c@biburllcpenalty=\count481
+\c@textcitecount=\count502
+\c@textcitetotal=\count503
+\c@textcitemaxnames=\count504
+\c@biburlbigbreakpenalty=\count505
+\c@biburlbreakpenalty=\count506
+\c@biburlnumpenalty=\count507
+\c@biburlucpenalty=\count508
+\c@biburllcpenalty=\count509
 \biburlbigskip=\muskip20
 \biburlnumskip=\muskip21
 \biburlucskip=\muskip22
 \biburllcskip=\muskip23
-\c@smartand=\count482
+\c@smartand=\count510
 )
 Package biblatex Info: Trying to load bibliography style 'gb7714-2015'...
 Package biblatex Info: ... file 'gb7714-2015.bbx' found.
@@ -915,24 +1040,24 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count483
-\c@bbx:relatedtotal=\count484
+\c@bbx:relatedcount=\count511
+\c@bbx:relatedtotal=\count512
 ))) (/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.sty (/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count485
-\decimalpart=\count486
+\integerpart=\count513
+\decimalpart=\count514
 )
 Package: xstring 2023/01/14 v1.85 String manipulations (CT)
 )
-\BracketLift=\skip120
-\footbibmargin=\skip121
-\footbiblabelsep=\skip122
-\c@gbnamefmtcase=\count487
-\c@gbalignlabel=\count488
-\c@gbcitelocalcase=\count489
-\c@gbbiblocalcase=\count490
-\c@lanordernum=\count491
-\bibitemindent=\skip123
-\biblabelextend=\skip124
+\BracketLift=\skip123
+\footbibmargin=\skip124
+\footbiblabelsep=\skip125
+\c@gbnamefmtcase=\count515
+\c@gbalignlabel=\count516
+\c@gbcitelocalcase=\count517
+\c@gbbiblocalcase=\count518
+\c@lanordernum=\count519
+\bibitemindent=\skip126
+\biblabelextend=\skip127
 Package biblatex Info: Delimiter 'finalnamedelim' in context '' already defined, overwriting.
 )
 Package biblatex Info: Trying to load citation style 'gb7714-2015'...
@@ -943,10 +1068,10 @@ Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count492
-\c@cbx@tempcntb=\count493
-\c@cbx@tempcntc=\count494
-\c@cbx@tempcntd=\count495
+\c@cbx@tempcnta=\count520
+\c@cbx@tempcntb=\count521
+\c@cbx@tempcntc=\count522
+\c@cbx@tempcntd=\count523
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -978,63 +1103,63 @@ Package biblatex Info: ... and expl3
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 115.
-Package hyperref Info: Option `psdextra' set `true' on input line 115.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 116.
+Package hyperref Info: Option `psdextra' set `true' on input line 116.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/puenc-greekbasic.def
 File: puenc-greekbasic.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (greek block) (HO)
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/psdextra.def
 File: psdextra.def 2023-02-07 v7.00v Hyperref: Additions to PDF string support
 )
-Package hyperref Info: Option `unicode' set `true' on input line 115.
-\@quotelevel=\count496
-\@quotereset=\count497
- (./njuthesis-sample.aux (./section/1-introduction.aux) (./section/2-background.aux) (./section/3-system.aux) (./section/4-implementation.aux) (./section/5-alg.aux) (./section/6-evaluation.aux) (./section/7-summarization.aux))
+Package hyperref Info: Option `unicode' set `true' on input line 116.
+\@quotelevel=\count524
+\@quotereset=\count525
+ (./njuthesis-sample.aux (./section/1-introduction.aux) (./section/2-background.aux) (./section/3-system.aux) (./section/4-implementation.aux) (./section/5-alg.aux) (./section/6-evaluation.aux) (./section/7-summarization.aux) (./section/resume.aux))
 \openout1 = `njuthesis-sample.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 115.
+(Font)              `operators' in the math version `normal' on input line 116.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 115.
+(Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 116.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 115.
+(Font)              `operators' in the math version `bold' on input line 116.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 115.
+(Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 116.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 115.
+(Font)              `symbols' in the math version `normal' on input line 116.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 115.
+(Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 116.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 115.
+(Font)              `symbols' in the math version `bold' on input line 116.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 115.
+(Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 116.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 115.
+(Font)              `largesymbols' in the math version `normal' on input line 116.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 115.
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 116.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 115.
+(Font)              `largesymbols' in the math version `bold' on input line 116.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 115.
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 116.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1076,12 +1201,24 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 115.
+Package hyperref Info: Link coloring OFF on input line 116.
 (./njuthesis-sample.out) (./njuthesis-sample.out)
 \@outlinefile=\write4
 \openout4 = `njuthesis-sample.out'.
 
-\c@lstlisting=\count498
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/ninecolors/ninecolors.sty
+Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
+)
+\c@lstlisting=\count526
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+))
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -1127,25 +1264,25 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                - online entry 'nvml' (njuthesis-sample.bib): Invalid format 'Accessed 04-Jan-2023' of date field 'urldate' - ignoring.
 
 )
-Package biblatex Info: Reference section=0 on input line 115.
-Package biblatex Info: Reference segment=0 on input line 115.
+Package biblatex Info: Reference section=0 on input line 116.
+Package biblatex Info: Reference segment=0 on input line 116.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/latinmodern-math.otf(1)/m/n --> TU/XITSMath-Regular(1)/m/n on input line 115.
+(Font)                  TU/latinmodern-math.otf(1)/m/n --> TU/XITSMath-Regular(1)/m/n on input line 116.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/latinmodern-math.otf(1)/b/n --> TU/XITSMath-Regular(1)/b/n on input line 115.
+(Font)                  TU/latinmodern-math.otf(1)/b/n --> TU/XITSMath-Regular(1)/b/n on input line 116.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  TU/latinmodern-math.otf(2)/m/n --> TU/XITSMath-Regular(2)/m/n on input line 115.
+(Font)                  TU/latinmodern-math.otf(2)/m/n --> TU/XITSMath-Regular(2)/m/n on input line 116.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  TU/latinmodern-math.otf(2)/b/n --> TU/XITSMath-Regular(2)/b/n on input line 115.
+(Font)                  TU/latinmodern-math.otf(2)/b/n --> TU/XITSMath-Regular(2)/b/n on input line 116.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  TU/latinmodern-math.otf(3)/m/n --> TU/XITSMath-Regular(3)/m/n on input line 115.
+(Font)                  TU/latinmodern-math.otf(3)/m/n --> TU/XITSMath-Regular(3)/m/n on input line 116.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  TU/latinmodern-math.otf(3)/b/n --> TU/XITSMath-Regular(3)/b/n on input line 115.
+(Font)                  TU/latinmodern-math.otf(3)/b/n --> TU/XITSMath-Regular(3)/b/n on input line 116.
 \sym__um_fam1=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `normal'
-(Font)                  TU/XITSMath-Regular(4)/m/n --> TU/XITSMath-Regular(4)/m/n on input line 115.
+(Font)                  TU/XITSMath-Regular(4)/m/n --> TU/XITSMath-Regular(4)/m/n on input line 116.
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
-(Font)                  TU/XITSMath-Regular(4)/m/n --> TU/XITSMath-Regular(4)/b/n on input line 115.
+(Font)                  TU/XITSMath-Regular(4)/m/n --> TU/XITSMath-Regular(4)/b/n on input line 116.
 File: ./logo/nju-emblem-purple.pdf Graphic file (type pdf)
 <use ./logo/nju-emblem-purple.pdf>
 File: ./logo/nju-name-purple.pdf Graphic file (type pdf)
@@ -1158,7 +1295,7 @@ File: ./logo/nju-name-purple.pdf Graphic file (type pdf)
 ]
 
 LaTeX Font Warning: Font shape `TU/TimesNewRoman(0)/m/sc' undefined
-(Font)              using `TU/TimesNewRoman(0)/m/n' instead on input line 122.
+(Font)              using `TU/TimesNewRoman(0)/m/n' instead on input line 123.
 
 File: ./logo/nju-emblem-purple.pdf Graphic file (type pdf)
 <use ./logo/nju-emblem-purple.pdf>
@@ -1166,7 +1303,12 @@ File: ./logo/nju-emblem-purple.pdf Graphic file (type pdf)
 
 ] [4
 
+] [5
+
+] [6
+
 ] (./section/0-abstract-zh.tex) [1
+
 
 ] [2
 
@@ -1346,26 +1488,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--33
  []
 
 ) [28]
-Overfull \hbox (46.7248pt too wide) in paragraph at lines 61--67
-\TU/SimSun(0)/m/n/12.045 我 们 的 解 决 方 案 是 从 原 始 计 算 图 中 重 建 出 和 原 模 型 等 价 的 \TU/CourierNew(0)/m/n/12.045 torch.fx.GraphModule\TU/SimSun(0)/m/n/12.045 。|
+Overfull \hbox (0.85165pt too wide) in paragraph at lines 61--67
+\TU/SimSun(0)/m/n/12.045 我 们 的 解 决 方 案 是 从 原 始 计 算 图 中 重 建 出 和 原 模 型 等 价 的 \TU/CourierNew(0)/m/n/12.045 fx.GraphModule\TU/SimSun(0)/m/n/12.045 。|
  []
 
-
-Overfull \hbox (91.2395pt too wide) in paragraph at lines 61--67
-\TU/CourierNew(0)/m/n/12.045 GraphModule \TU/SimSun(0)/m/n/12.045 通 过 直 接 定 义 计 算 图 的 方 式 构 建 模 型。|  具 体 的，|  一 个 \TU/CourierNew(0)/m/n/12.045 torch.fx.GraphModule
- []
-
-
-Overfull \hbox (49.64264pt too wide) in paragraph at lines 61--67
-\TU/SimSun(0)/m/n/12.045 中 包 含 了 若 干 算 子，|  以 及 一 个 用 于 描 述 这 些 算 子 之 间 计 算 依 赖 关 系 的 \TU/CourierNew(0)/m/n/12.045 torch.fx.Graph
- []
-
-[29]
-Overfull \hbox (11.6037pt too wide) in paragraph at lines 91--96
-\TU/SimSun(0)/m/n/12.045 后 按 照 拓 扑 排 序 的 顺 序 对 计 算 图 中 的 节 点 进 行 遍 历，|  对 于 每 个 中 间 节 点 \TU/CourierNew(0)/m/n/12.045 ir_node\TU/SimSun(0)/m/n/12.045 ，|
- []
-
-[30]
+[29] [30]
 File: figure/3-system/overhead_decomposition.pdf Graphic file (type pdf)
 <use figure/3-system/overhead_decomposition.pdf>
 File: figure/3-system/commu.pdf Graphic file (type pdf)
@@ -1488,7 +1615,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56] [57] (./table/7-mem.tex) [58]
+ [56] [57] (./table/7-mem.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [59]
@@ -1505,16 +1635,13 @@ File: figure/5-evaluation/performance-table.pdf Graphic file (type pdf)
 <use figure/5-evaluation/performance-table.pdf>
 ) [61] [62] (./table/9-convergence.tex)
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 9.0347pt on input line 176.
+(Font)              scaled to size 9.0347pt on input line 178.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 176.
+(Font)              scaled to size 6.00064pt on input line 178.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 9.03276pt on input line 176.
+(Font)              scaled to size 9.03276pt on input line 178.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 176.
-
-Underfull \vbox (badness 2269) has occurred while \output is active []
-
+(Font)              scaled to size 5.99936pt on input line 178.
  [63]
 File: ./figure/5-evaluation/convergence-epoch.pdf Graphic file (type pdf)
 <use ./figure/5-evaluation/convergence-epoch.pdf>
@@ -1533,35 +1660,78 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 第七章
-[67]) [68] [69] [70
+[67]) [68] [69
 
 
 
-] [71] [72] [73] [74] [75] [76] [77] [78
+] [70] [71] [72] [73] [74] [75] [76
 
-] (./section/acknoledgement.tex) [79] [80
+] (./section/acknoledgement.tex) [77] [78
+
+]
+\openout2 = `section/resume.aux'.
+
+ (./section/resume.tex
+Overfull \hbox (42.362pt too wide) in paragraph at lines 19--20
+[]\TU/SimSun(0)/m/n/12.045 国 家 重 点 研 发 计 划：|  软 件 定 义 的 人 机 物 融 合 云 计 算 支 撑 技 术 与 平 台  |（\TU/TimesNewRoman(0)/m/sc/12.045 2018YFB1004805\TU/SimSun(0)/m/n/12.045 ）| 
+ []
+
+) [79
+
+
+] [80
+
+
+
+]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Overfull \hbox (5.86716pt too wide) in paragraph at lines 204--204
+ []\TU/TimesNewRoman(0)/m/sc/12.045 MG20330012 
+ []
+
+
+Overfull \hbox (5.86716pt too wide) in paragraph at lines 204--204
+ []\TU/TimesNewRoman(0)/m/sc/12.045 MG20330012 
+ []
+
+> Step: build the whole table.
+
+Overfull \hbox (5.86716pt too wide) in paragraph at lines 204--204
+ []\TU/TimesNewRoman(0)/m/sc/12.045 MG20330012 
+ []
+
+[81
+
+] [82
 
 ]
 \tf@thm=\write8
 \openout8 = `njuthesis-sample.thm'.
 
- (./njuthesis-sample.aux (./section/1-introduction.aux) (./section/2-background.aux) (./section/3-system.aux) (./section/4-implementation.aux) (./section/5-alg.aux) (./section/6-evaluation.aux) (./section/7-summarization.aux))
+ (./njuthesis-sample.aux (./section/1-introduction.aux) (./section/2-background.aux) (./section/3-system.aux) (./section/4-implementation.aux) (./section/5-alg.aux) (./section/6-evaluation.aux) (./section/7-summarization.aux) (./section/resume.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `njuthesis-sample.out' has not changed.
-(rerunfilecheck)             Checksum: 6945058DFBBABEBC60FDB40BDACCFC7C;7341.
+(rerunfilecheck)             Checksum: D783453BE0383AC6FA617D429D7086B2;7561.
 Package logreq Info: Writing requests to 'njuthesis-sample.run.xml'.
 \openout1 = `njuthesis-sample.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38786 strings out of 476683
- 812086 string characters out of 5804047
- 2077018 words of memory out of 5000000
- 58315 multiletter control sequences out of 15000+600000
- 520070 words of font info for 198 fonts, out of 8000000 for 9000
+ 42250 strings out of 476683
+ 903083 string characters out of 5804047
+ 2092223 words of memory out of 5000000
+ 61739 multiletter control sequences out of 15000+600000
+ 521444 words of font info for 201 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 102i,15n,131p,3288b,6569s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,15n,131p,3288b,6577s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on njuthesis-sample.xdv (96 pages, 1298020 bytes).
+Output written on njuthesis-sample.xdv (100 pages, 1324892 bytes).

@@ -3030,18 +3030,14 @@
     \endentry
     \entry{ml-book}{book}{}
       \name{author}{1}{}{%
-        {{hash=491a78db63b899e7d6344d1a0b9636f3}{%
-           family={王珏周志华周傲英},
+        {{hash=e12f94398b52ccc07874d17ed705c8c7}{%
+           family={{王珏}，{周志华}，{周傲英}},
            familyi={王\bibinitperiod}}}%
       }
       \name{namea}{1}{}{%
-        {{hash=55e9b780c4b6399d31b894a3e6b5a5f1}{%
-           family={王珏},
-           familyi={王\bibinitperiod},
-           given={周傲英},
-           giveni={周\bibinitperiod},
-           suffix={周志华},
-           suffixi={周\bibinitperiod}}}%
+        {{hash=e12f94398b52ccc07874d17ed705c8c7}{%
+           family={{王珏}，{周志华}，{周傲英}},
+           familyi={王\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {chinese}%
@@ -3049,15 +3045,15 @@
       \list{publisher}{1}{%
         {清华大学出版社有限公司}%
       }
-      \strng{namehash}{491a78db63b899e7d6344d1a0b9636f3}
-      \strng{fullhash}{491a78db63b899e7d6344d1a0b9636f3}
-      \strng{bibnamehash}{491a78db63b899e7d6344d1a0b9636f3}
-      \strng{authorbibnamehash}{491a78db63b899e7d6344d1a0b9636f3}
-      \strng{authornamehash}{491a78db63b899e7d6344d1a0b9636f3}
-      \strng{authorfullhash}{491a78db63b899e7d6344d1a0b9636f3}
-      \strng{nameabibnamehash}{55e9b780c4b6399d31b894a3e6b5a5f1}
-      \strng{nameanamehash}{55e9b780c4b6399d31b894a3e6b5a5f1}
-      \strng{nameafullhash}{55e9b780c4b6399d31b894a3e6b5a5f1}
+      \strng{namehash}{e12f94398b52ccc07874d17ed705c8c7}
+      \strng{fullhash}{e12f94398b52ccc07874d17ed705c8c7}
+      \strng{bibnamehash}{e12f94398b52ccc07874d17ed705c8c7}
+      \strng{authorbibnamehash}{e12f94398b52ccc07874d17ed705c8c7}
+      \strng{authornamehash}{e12f94398b52ccc07874d17ed705c8c7}
+      \strng{authorfullhash}{e12f94398b52ccc07874d17ed705c8c7}
+      \strng{nameabibnamehash}{e12f94398b52ccc07874d17ed705c8c7}
+      \strng{nameanamehash}{e12f94398b52ccc07874d17ed705c8c7}
+      \strng{nameafullhash}{e12f94398b52ccc07874d17ed705c8c7}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}

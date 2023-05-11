@@ -31,7 +31,7 @@
     % degree = academic|professional,        % 学位类型，默认为学术型
     %
     % nl-cover,   % 是否需要国家图书馆封面，默认关闭
-    % decl-page,  % 是否需要诚信承诺书或原创性声明，默认关闭
+    decl-page,  % 是否需要诚信承诺书或原创性声明，默认关闭
     %
     %   页面模式，详见手册说明
     % draft,                  % 开启草稿模式
@@ -72,6 +72,7 @@
 \usepackage{subcaption}
 \usepackage{tabularx}
 \usepackage{multirow}
+\usepackage{pdfpages}
 \captionsetup{compatibility=false}
 
 
@@ -195,4 +196,9 @@
 
 % 可以在这里插入补充材料
 % 完工
+
+% \includepdf[pages=-]{section/resume.pdf}
+\include{section/resume}
+
+
 \end{document}

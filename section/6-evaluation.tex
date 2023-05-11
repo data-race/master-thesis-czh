@@ -34,8 +34,8 @@ PCIe(Peripheral Component Interconect Express) 是一种高速串行接口总线
 \texttt{PIX}是设备通过PCIe Switch使多个PCIe设备连接在一起。在这种方式下，设备共享同一条PCIe总线，设备与设备之间具有高带宽和高吞吐量的连接。
 而在\texttt{NODE}连接方式中，设备所使用的PCIe总线通过PCIe Bridge设备连接到NUMA(Non-Uniform Memory Access)节点内的PCIe总线。由于设备之间不共享PCIe总线，所以设备之间的带宽和吞吐相比于\texttt{PIX}有所降低，但是这种方式由于不共享总线，所以具有更好的可扩展性。
 图\ref{fig:switch-vs-bridge} 展示了在我们的实验环境中，\texttt{PIX}和\texttt{NODE}两种连接方式下，设备之间通信的速度对比。
-图中横轴表示通信数据量，纵轴通信时间。
-从图中可以看出，通过\texttt{PIX}方式连接的设备之间具有更高的通信速度，这也反映出了在真实环境中，设备之间通信方式的异构性。
+图中横轴表示通信数据量，纵轴表示通信时间。
+从图中可以看出，通过\texttt{PIX}方式连接的设备之间具有更高的通信速度，反映出了在真实环境中，设备之间采用不同通信链路进行通信时的速度差距。
 
 
 \subsection{模型与数据集}
@@ -64,6 +64,16 @@ PCIe(Peripheral Component Interconect Express) 是一种高速串行接口总线
 \label{sec:performace}
 \subsection{对比方法}
 为了验证\sys{}对于使用模型并行化对大模型进行训练的效果，我们引入了其他四种方法和\sys{}进行对比。
+\begin{align}
+	& \text{min} & & \mathit{Makespan} \label{eq:p-target-2} & \\
+	& \text{s.t.} & & \mathcal{S}_{i}=0 &\Gamma^{-}(i)=0, i\in \mathcal{V} \nonumber\\
+	& & & \mathcal{C}_{i} = \mathcal{S}_{i} + \mathit{p}_i & \forall i\in \mathcal{V} \nonumber\\
+	& & & \mathit{Makespan} \ge \mathcal{C}_{i} & \forall i\in \mathcal{V}\nonumber\\
+	& & & \sum_{p=1}^{m} \mathcal{X}_{i,p}=1, \mathcal{X}_{i,p}\in\{0,1\} & \forall i\in \mathcal{V} \nonumber\\
+	& & & \mathit{Commu}_{i,j} = \sum_{p\neq q}\mathcal{X}_{i,p}\mathcal{X}_{j,q}F_{\mathit{commu}}(i,j,p,q) & \forall \left\langle i,j\right\rangle \in \mathcal{E} \nonumber\\
+	& & & \mathcal{S}_{j} \ge \mathcal{C}_{i} + \mathit{Commu}_{i,j}&\forall \left\langle i,j\right\rangle \in \mathcal{E} \nonumber
+\end{align}
+
 \begin{itemize}
 	\item \texttt{m-TOPO}: \texttt{m-TOPO}是Baechi\upcite{baechi}提出的三种模型划分放置算法之一，全称为Memory-Constrained Topological Sort Placer。该算法的思路是对计算图中所有的节点进行拓扑排序，然后依次放置在当前设备上，直到达到当前设备的内存容量限制，再转向下一个设备继续放置。Baechi中将设备的内存容量限制设置为$\sum_{i\in\{n\}}d_i / m + \mathrm{max}_{i\in\{n\}} d_i$，其中$m$为设备数目，$d_i$为节点$i$的内存用量。通过这种方式，可以控制每个设备具有近似的内存用量。
 	\item \texttt{m-ETF}: \texttt{m-ETF}是Baechi\upcite{baechi} 中提出的另一种模型划分放置算法，全称为Memory-Constrained Earliest Task First。该算法在最早任务优先调度算法\upcite{etf} 的基础上改进得到。该算法维护一个队列，队列中放置着所有的节点和设备的组合$(i,p)$，其中$i$表示节点，$p$表示设备。$(i,p)$按照最早可调度时间升序排列，最早可调度时间的计算按照式\ref{eq:etf}得到。
@@ -79,15 +89,7 @@ PCIe(Peripheral Component Interconect Express) 是一种高速串行接口总线
 \end{itemize}
 
 
-\begin{align}
-	& \text{min} & & \mathit{Makespan} \label{eq:p-target-2} & \\
-	& \text{s.t.} & & \mathcal{S}_{i}=0 &\Gamma^{-}(i)=0, i\in \mathcal{V} \nonumber\\
-	& & & \mathcal{C}_{i} = \mathcal{S}_{i} + \mathit{p}_i & \forall i\in \mathcal{V} \nonumber\\
-	& & & \mathit{Makespan} \ge \mathcal{C}_{i} & \forall i\in \mathcal{V}\nonumber\\
-	& & & \sum_{p=1}^{m} \mathcal{X}_{i,p}=1, \mathcal{X}_{i,p}\in\{0,1\} & \forall i\in \mathcal{V} \nonumber\\
-	& & & \mathit{Commu}_{i,j} = \sum_{p\neq q}\mathcal{X}_{i,p}\mathcal{X}_{j,q}F_{\mathit{commu}}(i,j,p,q) & \forall \left\langle i,j\right\rangle \in \mathcal{E} \nonumber\\
-	& & & \mathcal{S}_{j} \ge \mathcal{C}_{i} + \mathit{Commu}_{i,j}&\forall \left\langle i,j\right\rangle \in \mathcal{E} \nonumber
-\end{align}
+
 
 
 

@@ -44,8 +44,8 @@
 \contentsline {section}{\numberline {6.1}实验设置}{55}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}硬件环境}{55}{subsection.6.1.1}%
 \contentsline {subsection}{\numberline {6.1.2}模型与数据集}{57}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}训练性能验证}{58}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}对比方法}{58}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.2}训练性能验证}{59}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}对比方法}{59}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}实验结果及分析}{60}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}有效性威胁分析}{62}{subsection.6.2.3}%
 \contentsline {section}{\numberline {6.3}训练收敛性验证}{63}{section.6.3}%
@@ -55,5 +55,7 @@
 \contentsline {chapter}{\bigger \normalfont \sffamily \numberline {第七章}总结与展望}{67}{chapter.7}%
 \contentsline {section}{\numberline {7.1}工作总结}{67}{section.7.1}%
 \contentsline {section}{\numberline {7.2}工作展望}{68}{section.7.2}%
-\contentsline {chapter}{\bigger \normalfont \sffamily 参考文献}{71}{chapter*.38}%
-\contentsline {chapter}{\bigger \normalfont \sffamily 致\hskip 2em\relax {}谢}{79}{chapter*.39}%
+\contentsline {chapter}{\bigger \normalfont \sffamily 参考文献}{69}{chapter*.38}%
+\contentsline {chapter}{\bigger \normalfont \sffamily 致\hskip 2em\relax {}谢}{77}{chapter*.39}%
+\contentsline {chapter}{\bigger \normalfont \sffamily 简历与科研成果}{79}{chapter*.40}%
+\contentsline {chapter}{\bigger \normalfont \sffamily 学位论文出版授权书}{81}{section*.45}%

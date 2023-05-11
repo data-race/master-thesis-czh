@@ -59,11 +59,11 @@ ONNX中定义了Graph，Node，Variable等结构体，解析ONNX文件，就可�
 也就是说原来的边$\langle u,v\rangle$会被$\langle u, w\rangle$ 和$\langle w,v\rangle$取代。
 
 由于在原始模型中计算图是隐式定义的，因此上述对于计算图进行修改的操作难以在不修改\texttt{forward}函数本身的条件下实现。
-为了更方便的修改计算图，我们的解决方案是从原始计算图中重建出和原模型等价的\texttt{torch.fx.GraphModule}。
+为了更方便的修改计算图，我们的解决方案是从原始计算图中重建出和原模型等价的\texttt{fx.GraphModule}。
 \texttt{torch.fx} \upcite{torchfx} 工具包提供了对PyTorch模型进行变换以及构建PyTorch模型的功能。
 与通过\texttt{forward}对计算图进行隐式定义的\texttt{nn.Module}实例不同，\texttt{GraphModule}通过直接定义计算图的方式构建模型。
-具体的，一个\texttt{torch.fx.GraphModule}中包含了若干算子，以及一个用于描述这些算子之间计算依赖关系的\texttt{torch.fx.Graph}实例。
-在\texttt{torch.fx.Graph}中，有一系列节点，每个节点除了记录对应的算子，还记录了参与运算的变量，通常参与运算的变量是其他节点的输出。
+一个\texttt{GraphModule}中包含了若干算子，以及一个用于描述这些算子之间计算依赖关系的\texttt{fx.Graph}实例。
+在\texttt{fx.Graph}中，有一系列节点，每个节点除了记录对应的算子，还记录了参与运算的变量，通常参与运算的变量是其他节点的输出。
 
 \begin{lstlisting}[language=Python, caption={模型重建}]
 import torch.fx as fx 
@@ -89,7 +89,7 @@ return fx.GraphModule(graph=torch.graph, root=wrapper_module)
 \end{lstlisting}
 
 在获取到计算图之后，我们可以根据计算图构建出等价的模型，上面的伪代码展示了构建的过程。
-首先创建出记录计算图信息的\texttt{torch.fx.Graph}对象，以及用于存储计算图中节点对应的PyTorch算子的容器\texttt{wrapper\_module}。
+首先创建出记录计算图信息的\texttt{fx.Graph}对象，以及用于存储计算图中节点对应的PyTorch算子的容器\texttt{wrapper\_module}。
 然后按照拓扑排序的顺序对计算图中的节点进行遍历，对于每个中间节点\texttt{ir\_node}，寻找它的输入变量，如果输入变量来自计算图，则直接使用变量名，如果输入变量来自其他节点的输出，则使用该节点作为输入。
 所有输入变量确定后，用\texttt{placer\_holders}记录算子之间的计算关系。
 图中所有节点遍历完成后，就得到了存储所有节点对应的PyTorch算子的容器\texttt{wrapper\_module}，以及记载了这些算子之间计算关系的\texttt{torch\_graph}，从\texttt{wrapper\_module}和\texttt{torch\_graph}就可以得到所需的\texttt{fx.GraphModule}，并返回。
@@ -100,7 +100,7 @@ return fx.GraphModule(graph=torch.graph, root=wrapper_module)
 % 怎么做： 线性建模
 分布式深度学习不仅是计算密集型任务，也是通信密集型任务。
 在进行模型并行化训练时，模型被分散在不同的设备上，前向传播的中间结果和反向传播的梯度通过设备之间的通信在不同的算子之间传输。
-而设备之间的通信时间不可忽略，图 \ref{fig:overhead} 展示了使用4张1080Ti GPU在CIFAR-10 \upcite{cifar}数据集上训练VGG19 \upcite{vgg}模型时，不同的步骤耗时的分解。
+而设备之间的通信时间不可忽略，图 \ref{fig:overhead} 展示了使用4张1080Ti GPU在CIFAR-10 \upcite{cifar} 数据集上训练VGG19 \upcite{vgg} 模型时，不同的步骤耗时的分解。
 可以发现即使CIFAR-10是很小的数据集，通信时间也占据了总用时的40\%。
 
 \begin{figure}[h]
@@ -123,7 +123,7 @@ return fx.GraphModule(graph=torch.graph, root=wrapper_module)
 
 另一方面，在优化通信代价时，除了需要考虑节点之间通信的数据量，也需要考虑设备与设备之间的通信链路。
 在计算集群中，设备之间的通信链路往往是异构的。
-例如设备可以通过高性能专用通信设备，如NVLink，NVSwitch通信，也可能通过通用的PCIe或者以太网进行通信。
+例如设备可以通过高性能专用通信设备，如NVLink，NV-Switch通信，也可能通过通用的PCIe或者以太网进行通信。
 因此在进行通信代价优化时，设备之间通信链路的异构性也需要被考虑。
 我们设计了通信测试模块来对设备之间的点对点通信带宽进行建模。
 图 \ref{fig:linear}展示了设备通过10Gbps的以太网卡和通过PCIe Switch进行通信时，传输的数据量和用时的关系，可以发现传输数据量和通信时间呈现出线性关系，因此我们使用线性模型对通信代价进行建模。
@@ -188,7 +188,7 @@ return fx.GraphModule(graph=torch.graph, root=wrapper_module)
 \end{algorithm}
 
 \textbf{计算图节点开销}: 计算图节点的显存开销来自模型参数和训练过程中用于优化模型参数所产生的梯度以及可能的动量，二阶动量等。大部分节点所对应的算子，例如激活函数算子，二元运算算子等都没有可以学习的参数，因此这些算子的节点不会直接产生显存开销。表 \ref{table:operator-mem} 列举了部分会产生模型参数显存开销的算子，以及对应的开销的计算方法。
-模型参数梯度与模型参数大小相同，因此显存开销相同。但是不同的优化器中，除了需要使用梯度，也会使用动量或者二阶动量来记录梯度下降的历史信息，控制梯度下降的优化方向。例如在Adam优化器 \upcite{adam}中，会用到动量和二阶动量，因此会产生为模型参数显存开销3倍的显存开销，用于存储梯度、动量和二阶动量。
+模型参数梯度与模型参数大小相同，因此显存开销相同。但是不同的优化器中，除了需要使用梯度，也会使用动量或者二阶动量来记录梯度下降的历史信息，控制梯度下降的优化方向。例如在Adam优化器 \upcite{adam} 中，会用到动量和二阶动量，因此会产生为模型参数显存开销3倍的显存开销，用于存储梯度、动量和二阶动量。
 
 \textbf{计算图边开销}: 计算图中，每个边都代表一个中间结果变量，存储这些变量和变量的梯度会带来显存开销。此外，如果边两端的节点在同一个设备上，那么边上的变量只会产生一次开销，而如果边两端的节点在不同的设备上，则边上的变量会分别作为节点输入和节点输出在两个设备上都产生显存开销。
 
