@@ -76,13 +76,13 @@
     field* = {Software Methodology and Automation},
     % 研究领域
     %
-    chairman = {某某某~教授},
+    chairman = {王林章~教授},
     % 答辩委员会主席
     % 推荐使用波浪号(~)分隔姓名和职称
     %
     reviewer = {
-        某某某~教授,
-        某某某~教授
+        徐峰~副教授,
+        李晅松~副教授
     },
     %
     % 答辩委员会成员

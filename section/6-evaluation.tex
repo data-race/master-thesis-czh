@@ -76,16 +76,16 @@ PCIe(Peripheral Component Interconect Express) 是一种高速串行接口总线
 	\texttt{m-ETF}依次从队列中取出当前可调度时间最小的组合$(i,p)$，如果设备$p$的剩余内存可以放置节点$i$，则将节点$i$放置到设备$p$，并更新设备$p$的空闲时间$\mathit{free}(p)$和$i$的所有后继的最早可调度时间。重复这个过程直到所有节点都被调度。
 
 	\item \texttt{m-SCT}: 该算法是在经典的调度算法最小通信时间调度\upcite{sct}上改进得到。在\texttt{m-SCT}中，通过整数线性规划以最小化整体完成时间为目标，为每个节点寻找一个最优子节点，并优先将节点和其最优子节点放置在同一个设备上。
-	\item \texttt{Pesto}: 同时，我们也对比了\texttt{Pesto}和我们的方法，由\texttt{Pesto}的原始约束优化问题(\ref{sec:pesto})只能适用于设备数目为2的情况，我们对其进行了扩展。我们采用和\sys{}类似的方法，使用多个指示变量来表示节点在设备上的放置。修改后的\texttt{Pesto}的约束优化问题定义为式\ref{eq:p-target-2}。
+	\item \texttt{Pesto}: 同时，我们也对比了\texttt{Pesto}和我们的方法，由\texttt{Pesto}的原始约束优化问题(\ref{sec:pesto})只能适用于设备数目为2的情况，我们对其进行了扩展。我们采用和\sys{}类似的方法，使用多个指示变量来表示节点在设备上的放置。式\ref{eq:p-target-2-start} ～  \ref{eq:p-target-2-end}展示了修改后的\texttt{Pesto}的约束优化问题定义。
 \end{itemize}
 
 \begin{align}
-	& \text{min} & & \mathit{Makespan} \label{eq:p-target-2} & \\
-	& \text{s.t.} & & \mathcal{S}_{i}=0 &\Gamma^{-}(i)=0, i\in \mathcal{V} \nonumber\\
-	& & & \mathcal{C}_{i} = \mathcal{S}_{i} + \mathit{p}_i,\ \mathit{Makespan} \ge \mathcal{C}_{i} & \forall i\in \mathcal{V} \nonumber\\
-	& & & \sum_{p=1}^{m} \mathcal{X}_{i,p}=1, \mathcal{X}_{i,p}\in\{0,1\} & \forall i\in \mathcal{V} \nonumber\\
-	& & & \mathit{Commu}_{i,j} = \sum_{p\neq q}\mathcal{X}_{i,p}\mathcal{X}_{j,q}F_{\mathit{commu}}(i,j,p,q) & \forall \left\langle i,j\right\rangle \in \mathcal{E} \nonumber\\
-	& & & \mathcal{S}_{j} \ge \mathcal{C}_{i} + \mathit{Commu}_{i,j}&\forall \left\langle i,j\right\rangle \in \mathcal{E} \nonumber
+	& \text{min} & & \mathit{Makespan} \label{eq:p-target-2-start} & \\
+	& \text{s.t.} & & \mathcal{S}_{i}=0 &\Gamma^{-}(i)=0, i\in \mathcal{V} \\
+	& & & \mathcal{C}_{i} = \mathcal{S}_{i} + \mathit{p}_i,\ \mathit{Makespan} \ge \mathcal{C}_{i} & \forall i\in \mathcal{V} \\
+	& & & \sum_{p=1}^{m} \mathcal{X}_{i,p}=1, \mathcal{X}_{i,p}\in\{0,1\} & \forall i\in \mathcal{V} \\
+	& & & \mathit{Commu}_{i,j} = \sum_{p\neq q}\mathcal{X}_{i,p}\mathcal{X}_{j,q}F_{\mathit{commu}}(i,j,p,q) & \forall \left\langle i,j\right\rangle \in \mathcal{E} \\
+	& & & \mathcal{S}_{j} \ge \mathcal{C}_{i} + \mathit{Commu}_{i,j}&\forall \left\langle i,j\right\rangle \in \mathcal{E} \label{eq:p-target-2-end}
 \end{align}
 
 

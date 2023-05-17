@@ -130,7 +130,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
+      \field{booktitle}{IEEE Conference on Computer Vision and Pattern Recognition}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -195,7 +195,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 10th ACM conference on recommender systems}
+      \field{booktitle}{ACM Conference On Recommender Systems}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -291,7 +291,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining}
+      \field{booktitle}{ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -366,7 +366,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
+      \field{booktitle}{IEEE conference on computer vision and pattern recognition}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -506,7 +506,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the aaai conference on artificial intelligence}
+      \field{booktitle}{AAAI Conference on Artificial Intelligence}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -584,7 +584,7 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{journaltitle}{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -833,7 +833,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We present BART, a denoising autoencoder for pretraining sequence-to-sequence models. BART is trained by (1) corrupting text with an arbitrary noising function, and (2) learning a model to reconstruct the original text. It uses a standard Tranformer-based neural machine translation architecture which, despite its simplicity, can be seen as generalizing BERT (due to the bidirectional encoder), GPT (with the left-to-right decoder), and other recent pretraining schemes. We evaluate a number of noising approaches, finding the best performance by both randomly shuffling the order of sentences and using a novel in-filling scheme, where spans of text are replaced with a single mask token. BART is particularly effective when fine tuned for text generation but also works well for comprehension tasks. It matches the performance of RoBERTa on GLUE and SQuAD, and achieves new state-of-the-art results on a range of abstractive dialogue, question answering, and summarization tasks, with gains of up to 3.5 ROUGE. BART also provides a 1.1 BLEU increase over a back-translation system for machine translation, with only target language pretraining. We also replicate other pretraining schemes within the BART framework, to understand their effect on end-task performance.}
-      \field{booktitle}{Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics}
+      \field{booktitle}{Annual Meeting of the Association for Computational Linguistics}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -1459,7 +1459,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{12th $\{$USENIX$\}$ Symposium on Operating Systems Design and Implementation ($\{$OSDI$\}$ 16)}
+      \field{booktitle}{USENIX Symposium on Operating Systems Design and Implementation}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -1831,7 +1831,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Advances in neural information processing systems}
+      \field{journaltitle}{Advances in Neural Information Processing Systems}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -1945,7 +1945,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 27th ACM Symposium on Operating Systems Principles}
+      \field{booktitle}{ACM Symposium on Operating Systems Principles}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -2060,7 +2060,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2020 USENIX Annual Technical Conference (USENIX ATC 20)}
+      \field{booktitle}{USENIX Annual Technical Conference}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -2165,7 +2165,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{50th International Conference on Parallel Processing}
+      \field{booktitle}{International Conference on Parallel Processing}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -2303,7 +2303,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 26th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming}
+      \field{booktitle}{ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -2651,7 +2651,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 11th ACM Symposium on Cloud Computing}
+      \field{booktitle}{ACM Symposium on Cloud Computing}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -2726,7 +2726,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 22nd International Middleware Conference}
+      \field{booktitle}{International Middleware Conference}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -2804,7 +2804,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS)}
+      \field{booktitle}{IEEE International Parallel and Distributed Processing Symposium}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -3121,7 +3121,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 22nd international conference on Machine learning}
+      \field{booktitle}{International Conference on Machine Learning}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -3189,7 +3189,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{GPU Technology Conference (GTC)}
+      \field{booktitle}{GPU Technology Conference}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -3276,7 +3276,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2016 USENIX Annual Technical Conference (USENIX ATC 16)}
+      \field{booktitle}{USENIX Annual Technical Conference}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -3493,7 +3493,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}
+      \field{booktitle}{IEEE/CVF Conference on Computer Vision and Pattern Recognition}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -4049,7 +4049,7 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings of the 11th ACM Symposium on Cloud Computing}
+      \field{journaltitle}{ACM Symposium on Cloud Computing}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -4388,7 +4388,7 @@
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{11th USENIX symposium on operating systems design and implementation (OSDI 14)}
+      \field{booktitle}{USENIX Symposium on Operating Systems Design and Implementation (OSDI 14)}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -4513,7 +4513,7 @@
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Advances in neural information processing systems}
+      \field{journaltitle}{Advances in Neural Information Processing Systems}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -4602,7 +4602,7 @@
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Advances in neural information processing systems}
+      \field{journaltitle}{Advances in Neural Information Processing Systems}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -5472,7 +5472,7 @@
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings 1995 INRIA/IEEE Symposium on Emerging Technologies and Factory Automation. ETFA'95}
+      \field{booktitle}{INRIA/IEEE Symposium on Emerging Technologies and Factory Automation.}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
