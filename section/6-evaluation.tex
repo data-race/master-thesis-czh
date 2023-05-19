@@ -4,30 +4,36 @@
 
 本章将介绍对\sys{}所进行的实验评估。
 首先我们介绍实验设置(\ref{sec:setup})，包括所使用的硬件环境以及选取的模型和数据集。
-然后是对\sys{}中提出的模型划分方法的性能评估(\ref{sec:performace})。
-为了评估\sys{}中提出的模型划分方法的性能，我们在真实环境下选取了来自不同领域的深度神经网络模型，进行了模型并行化训练。
-我们关注模型在不同的划分方法下的训练速度，训练速度越快，模型划分的效果越好。
-接着为了验证\sys{}中的模型划分方法不会影响原始模型的收敛性，我们设计了训练收敛性验证实验(\ref{sec:convergence})。
-我们会在每个实验中介绍实验的细节和结果，并且对结果进行分析。
+本章的研究旨在研究 \sys{} 的性能，验证\sys{}中提出的模型划分方法的有效性和稳定性。
+具体而言，我们验证如下的两个问题：
+\begin{itemize}
+	\item \textbf{\textit{RQ1}}: 相比于其他现有方法，\sys{}能否有效提升模型的训练效率。
+	\item \textbf{\textit{RQ2}}: \sys{}中提出的模型划分方法是否会影响原始模型的收敛性。
+\end{itemize}
+
+对于\textbf{\textit{RQ1}}, 我们在真实环境下选取了来自不同领域的深度神经网络模型，进行了模型并行化训练。
+我们关注模型在不同的划分方法下的训练速度，训练速度越快，模型划分的效果越好(\ref{sec:performace})。
+对于\textbf{\textit{RQ2}}, 我们设计了收敛性验证实验(\ref{sec:convergence})， 验证了\sys{}中提出的模型划分方法不会影响原始模型的收敛性。
 最后我们对本章内容进行小结(\ref{sec:evaluation-summary})。
 
-\input{table/5-setup.tex}
 \section{实验设置}
 \label{sec:setup}
 \subsection{硬件环境}
 \label{sec:hardware}
-\input{table/6-gpu-topo.tex}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.75\textwidth]{./figure/5-evaluation/pix-vs-node.pdf}
-	\caption{PCIe Switch和PCIe Bridge的通信速度对比}
-	\label{fig:switch-vs-bridge}
-\end{figure}
 
 我们在一个服务器上进行实验，该服务器的配置如表\ref{table:setup}所示。
 在该服务器上有5个型号相同GPU，每个GPU有24GB的显存，由于服务器上并未安装高性能的专用通信设备(例如NVLink)进行连接，因此GPU设备之间的通信链路是异构的，具体来说，GPU的通信拓扑如表\ref{table:topo}所示。
 
+\input{table/5-setup.tex}
+
+\input{table/6-gpu-topo.tex}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.65\textwidth]{./figure/5-evaluation/pix-vs-node.pdf}
+	\caption{PCIe Switch和PCIe Bridge的通信速度对比}
+	\label{fig:switch-vs-bridge}
+\end{figure}
 
 PCIe(Peripheral Component Interconect Express) 是一种高速串行接口总线标准，用于将各种外部设备(例如显卡，网卡，硬盘等)连接到计算机上。
 在服务器上，设备之间连接的方式主要有\texttt{PIX}和\texttt{NODE}两种。
@@ -178,6 +184,23 @@ PCIe(Peripheral Component Interconect Express) 是一种高速串行接口总线
 我们使用的实验配置如表\ref{table:convergence-setup} 所示。
 
 
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[b]{0.8\textwidth}
+	  \includegraphics[width=\textwidth]{./figure/5-evaluation/convergence-epoch.pdf}
+	  \caption{模型准确率随轮次(Epoch)变化}
+	  \label{fig:convergence-epoch}
+	\end{subfigure}
+	\vskip\baselineskip
+	\begin{subfigure}[b]{0.8\textwidth}
+	  \includegraphics[width=\textwidth]{./figure/5-evaluation/convergence-time.pdf}
+	  \caption{模型准确率随时间变化}
+	  \label{fig:convergence-time}
+	\end{subfigure}
+	\caption{收敛性验证}
+	\label{fig:convergence-all}
+\end{figure}
+
 \subsection{实验结果及分析}
 
 图\ref{fig:convergence-all} 展示了模型收敛性的验证结果。
@@ -186,23 +209,6 @@ PCIe(Peripheral Component Interconect Express) 是一种高速串行接口总线
 因此可以得到结论，\sys{}并不会损害原始模型的性能，即不会影响原始模型的收敛性。
 此外，图\ref{fig:convergence-time} 展示了模型的准确率随着时间的变化情况。
 可以看出，由于\sys{}利用了模型并行化方法，有效提升了大模型训练的效率，相比于数据并行化方法，每一轮所需的训练时间更短，模型随着时间的收敛速度更快。
-
-\begin{figure}[ht]
-	\centering
-	\begin{subfigure}[b]{0.85\textwidth}
-	  \includegraphics[width=\textwidth]{./figure/5-evaluation/convergence-epoch.pdf}
-	  \caption{模型准确率随轮次(Epoch)变化}
-	  \label{fig:convergence-epoch}
-	\end{subfigure}
-	\vskip\baselineskip
-	\begin{subfigure}[b]{0.85\textwidth}
-	  \includegraphics[width=\textwidth]{./figure/5-evaluation/convergence-time.pdf}
-	  \caption{模型准确率随时间变化}
-	  \label{fig:convergence-time}
-	\end{subfigure}
-	\caption{收敛性验证}
-	\label{fig:convergence-all}
-\end{figure}
 
 
 \section{本章小结}

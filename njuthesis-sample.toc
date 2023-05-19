@@ -43,7 +43,7 @@
 \contentsline {chapter}{\bigger \normalfont \sffamily \numberline {第六章}实验评估}{55}{chapter.6}%
 \contentsline {section}{\numberline {6.1}实验设置}{55}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}硬件环境}{55}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}模型与数据集}{57}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.2}模型与数据集}{56}{subsection.6.1.2}%
 \contentsline {section}{\numberline {6.2}训练性能验证}{58}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}对比方法}{58}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}实验结果及分析}{60}{subsection.6.2.2}%
