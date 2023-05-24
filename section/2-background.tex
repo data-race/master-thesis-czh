@@ -304,7 +304,27 @@ Fan等人提出了Dapple \upcite{dapple}。Dapple组合了数据并行化和模�
 % 3. 约束优化
 % 4. 启发式
 
-在Gpipe等利用流水线对模型并行化进行优化的工作中，将模型定义为若干连续的层，对模型划分时也是进行以层为单位(Layer-wise)的划分。
+\begin{lstlisting}[language=Python, caption={PyTorch 1.13中的流水线并行化}]
+ # 分布式训练环境初始化
+ os.environ['MASTER_ADDR'] = 'localhost'
+ os.environ['MASTER_PORT'] = '29500'
+ # 构建流水线
+ fc1 = nn.Linear(16, 8).cuda(0)  # 划分到GPU-0
+ fc2 = nn.Linear(8, 4).cuda(1)   # 划分到GPU-1
+ model = nn.Sequential(fc1, fc2)
+ model = Pipe(model, chunks=8)
+ input = torch.rand(16, 16).cuda(0)
+ output_rref = model(input)
+\end{lstlisting}
+
+
+上述代码展示了来自PyTorch官方文档\footnote[1]{https://pytorch.org/docs/stable/pipeline.html\#torch.distributed.pipeline.sync.Pipe}关于如何将模型划分到多个设备上进行流水线训练的例子。
+在这个例子中，首先设置了环境变量，用来指定分布式训练时，需要进行RPC通信的地址。
+在5至7行，是模型定义和模型划分，用户需要手动为模型中的每一层分配CUDA设备，在例子中，全连接层fc1被划分到了0号设备，fc2被划分到了1号设备。
+在8至10行，被划分好的模型被\texttt{Pipe}包装，进行训练。
+\texttt{Pipe}只能接受\texttt{nn.Sequential}，也就是模型必须可以表达为连续的若干层，才可以进行进一步的训练。
+在原生的PyTorch中，只支持这种对模型进行分层手动划分的方式。
+这种方式粒度较粗且缺乏通用性，很难应用到复杂模型上，因为复杂模型难以使用简单的分层结构进行描述。
 尽管按层划分是一种可行的方案，但是其仍有如下的不足：
 \begin{itemize}
 	\item 限制了使用者定义模型的方式：按层划分只接受可以表示为连续若干层的模型，例如在PyTorch中，这类模型通常定义为\texttt{nn.Sequential}，每一层只有一个前驱和一个后继。
@@ -340,6 +360,5 @@ Fan等人提出了Dapple \upcite{dapple}。Dapple组合了数据并行化和模�
 然后介绍了分布式深度学习的发展和目前的两种主要模式，包括数据并行化和模型并行化。
 有关数据并行化，介绍了其适用场景和主流架构，包括参数服务器架构和All Reduce架构，并对两种架构进行了对比。
 有关模型并行化，介绍了模型并行化和数据并行化的区别，以及适用场景，并介绍了对于模型并行化的流水线优化技术。
-最后，介绍了模型并行化中一个重要问题，也就是模型的划分问题。比较了分层划分和计算图划分两种方式，并介绍了目前对于模型划分的工作方向。
-
-下一章讲介绍对大型神经网络模型进行训练的难点与挑战，以及我们针对大型神经网络模型训练提出的\sys{}框架的设计。 
+最后，介绍了模型并行化中一个重要问题，也就是模型的划分问题。比较了分层划分和计算图划分两种方式，并介绍了目前对于模型划分的三种工作方向。
+下一章将介绍我们针对大型神经网络模型训练提出的\sys{}框架的设计和各个功能模块的实现。 

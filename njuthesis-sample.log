@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.10)  19 MAY 2023 16:48
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.10)  24 MAY 2023 23:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1113,7 +1113,7 @@ File: psdextra.def 2023-02-07 v7.00v Hyperref: Additions to PDF string support
 Package hyperref Info: Option `unicode' set `true' on input line 116.
 \@quotelevel=\count524
 \@quotereset=\count525
- (./njuthesis-sample.aux (./section/1-introduction.aux) (./section/2-background.aux) (./section/3-system.aux) (./section/4-implementation.aux) (./section/5-alg.aux) (./section/6-evaluation.aux) (./section/7-summarization.aux) (./section/resume.aux))
+ (./njuthesis-sample.aux (./section/1-introduction.aux) (./section/2-background.aux) (./section/3-implementation.aux) (./section/4-alg.aux) (./section/5-evaluation.aux) (./section/6-summarization.aux) (./section/resume.aux))
 \openout1 = `njuthesis-sample.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
@@ -1312,7 +1312,12 @@ File: ./logo/nju-emblem-purple.pdf Graphic file (type pdf)
 
 ] [2
 
-] (./section/0-abstract-en.tex [3]) [4] (./njuthesis-sample.toc
+] (./section/0-abstract-en.tex
+Overfull \hbox (0.10437pt too wide) in paragraph at lines 5--6
+[]\TU/TimesNewRoman(0)/m/sc/12.045 Existing methods for partitioning models have used reinforcement learning, heuris-
+ []
+
+[3]) [4] (./njuthesis-sample.toc
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
 (Font)              scaled to size 12.04628pt on input line 7.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
@@ -1413,39 +1418,34 @@ File: figure/2-background/mp-time.png Graphic file (type bmp)
 File: figure/2-background/gpipe.png Graphic file (type bmp)
 <figure/2-background/gpipe.png>
  [16] [17] [18]) [19]
-\openout2 = `section/3-system.aux'.
+\openout2 = `section/3-implementation.aux'.
 
- (./section/3-system.tex [20
+ (./section/3-implementation.tex [20
 
 
 
 
 ]
 第三章
-[21] [22] [23]
 
 LaTeX Font Warning: Font shape `TU/Arial(0)/m/sc' undefined
-(Font)              using `TU/Arial(0)/m/n' instead on input line 79.
+(Font)              using `TU/Arial(0)/m/n' instead on input line 19.
 
+[21]
 File: figure/3-system/arch2.pdf Graphic file (type pdf)
 <use figure/3-system/arch2.pdf>
 
+
 LaTeX Font Warning: Font shape `TU/TimesNewRoman(0)/b/sc' undefined
-(Font)              using `TU/TimesNewRoman(0)/b/n' instead on input line 85.
+(Font)              using `TU/TimesNewRoman(0)/b/n' instead on input line 49.
 
-[24]) [25] [26]
-\openout2 = `section/4-implementation.aux'.
 
- (./section/4-implementation.tex
-第四章
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22] [23]
 File: figure/3-system/2ir.pdf Graphic file (type pdf)
 <use figure/3-system/2ir.pdf>
-[27
-
-
-
-
-] (./table/0-onnx-operators.tex
+ (./table/0-onnx-operators.tex
 Missing character: There is no 。 (U+3002) in font [XITSMath-Regular.otf]/OT:script=math;language=dflt;+ss08;!
 Missing character: There is no 。 (U+3002) in font [XITSMath-Regular.otf]/OT:script=math;language=dflt;+ss08;!
 
@@ -1484,59 +1484,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--33
 \TU/TimesNewRoman(0)/m/sc/12.045 nn.Conv2d;
  []
 
-) [28]
-Overfull \hbox (0.85165pt too wide) in paragraph at lines 61--67
+[24]) [25]
+Overfull \hbox (0.85165pt too wide) in paragraph at lines 109--115
 \TU/SimSun(0)/m/n/12.045 我 们 的 解 决 方 案 是 从 原 始 计 算 图 中 重 建 出 和 原 模 型 等 价 的 \TU/CourierNew(0)/m/n/12.045 fx.GraphModule\TU/SimSun(0)/m/n/12.045 。|
  []
 
-[29] [30]
+[26]
 File: figure/3-system/overhead_decomposition.pdf Graphic file (type pdf)
 <use figure/3-system/overhead_decomposition.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: figure/3-system/commu.pdf Graphic file (type pdf)
 <use figure/3-system/commu.pdf>
- [31] (./table/1-model-mem.tex) [32] (./table/2-operator-mem.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27] [28] (./table/1-model-mem.tex) [29] (./table/2-operator-mem.tex
 Overfull \hbox (2.63084pt too wide) in paragraph at lines 15--15
 []|\TU/TimesNewRoman(0)/m/sc/12.045 BatchNorm2D| 
  []
 
 )
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 157.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 205.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33]
-Underfull \vbox (badness 2334) has occurred while \output is active []
+[30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34] [35]
-Overfull \hbox (0.89725pt too wide) in paragraph at lines 219--220
+ [31]
+Overfull \hbox (0.89725pt too wide) in paragraph at lines 267--268
 []\TU/CourierNew(0)/m/n/12.045 torch.Tensor.register_hook(func)\TU/TimesNewRoman(0)/m/sc/12.045 : \TU/SimSun(0)/m/n/12.045 向 某 个 张 量 注 册 回 调 函 数，|
  []
 
-
-Overfull \hbox (3.7404pt too wide) in paragraph at lines 220--221
+[32]
+Overfull \hbox (3.7404pt too wide) in paragraph at lines 268--269
 []\TU/CourierNew(0)/m/n/12.045 torch.nn.Module.register_forward_pre_hook(func)\TU/TimesNewRoman(0)/m/sc/12.045 : \TU/SimSun(0)/m/n/12.045 向 某
  []
 
 
-Overfull \hbox (4.89383pt too wide) in paragraph at lines 222--223
+Overfull \hbox (4.89383pt too wide) in paragraph at lines 270--271
 []\TU/CourierNew(0)/m/n/12.045 torch.nn.Module.register_backward_hook(func)\TU/TimesNewRoman(0)/m/sc/12.045 : \TU/SimSun(0)/m/n/12.045 向 某 个 神
  []
 
-[36]
+[33]
 File: figure/3-system/profile.pdf Graphic file (type pdf)
 <use figure/3-system/profile.pdf>
- [37]
+ [34]
 File: ./figure/3-system/partition_train.png Graphic file (type bmp)
 <./figure/3-system/partition_train.png>
- [38]
 File: ./figure/3-system/moveTo.pdf Graphic file (type pdf)
 <use ./figure/3-system/moveTo.pdf>
- [39]) [40]
-\openout2 = `section/5-alg.aux'.
 
- (./section/5-alg.tex
-第五章
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[35] [36]) [37]
+\openout2 = `section/4-alg.aux'.
+
+ (./section/4-alg.tex [38
+
+
+
+
+]
+第四章
 File: figure/4-alg/googlenet.png Graphic file (type bmp)
 <figure/4-alg/googlenet.png>
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
@@ -1555,46 +1573,41 @@ LaTeX Font Info:    Font shape `TU/XITSMath-Regular(3)/m/n' will be
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [41
-
-
-
-
-]
+) [39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42]
+ [40]
 File: ./figure/4-alg/fp_bp.pdf Graphic file (type pdf)
 <use ./figure/4-alg/fp_bp.pdf>
- [43]
+ [41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44] [45] (./table/4-symbols-2.tex [46]) [47]
+ [42] [43] (./table/4-symbols-2.tex [44]) [45]
 Underfull \vbox (badness 1776) has occurred while \output is active []
 
- [48]
+ [46]
 File: ./figure/4-alg/commmu_cdf.pdf Graphic file (type pdf)
 <use ./figure/4-alg/commmu_cdf.pdf>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[49]
+[47]
 Underfull \vbox (badness 8132) has occurred while \output is active []
 
- [50] [51]
+ [48] [49]
 Underfull \vbox (badness 1616) has occurred while \output is active []
 
- [52]) [53]
-\openout2 = `section/6-evaluation.aux'.
+ [50]) [51]
+\openout2 = `section/5-evaluation.aux'.
 
- (./section/6-evaluation.tex [54
+ (./section/5-evaluation.tex [52
 
 
 
 
 ]
-第六章
+第五章
 (./table/5-setup.tex) (./table/6-gpu-topo.tex
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 (Font)              scaled to size 11.14789pt on input line 9.
@@ -1609,7 +1622,7 @@ File: ./figure/5-evaluation/pix-vs-node.pdf Graphic file (type pdf)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[55] [56] [57] (./table/7-mem.tex) [58]
+[53] [54] [55] (./table/7-mem.tex) [56]
 File: ./figure/5-evaluation/result-amoebanetd.pdf Graphic file (type pdf)
 <use ./figure/5-evaluation/result-amoebanetd.pdf>
 File: ./figure/5-evaluation/result-deeplabv3.pdf Graphic file (type pdf)
@@ -1618,17 +1631,17 @@ File: ./figure/5-evaluation/result-unet.pdf Graphic file (type pdf)
 <use ./figure/5-evaluation/result-unet.pdf>
 File: ./figure/5-evaluation/result-wide-resnet152.pdf Graphic file (type pdf)
 <use ./figure/5-evaluation/result-wide-resnet152.pdf>
- [59] (./table/8-performance.tex
+ [57] (./table/8-performance.tex
 File: figure/5-evaluation/performance-table.pdf Graphic file (type pdf)
 <use figure/5-evaluation/performance-table.pdf>
- [60])
+ [58])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61] (./table/9-convergence.tex
+ [59] (./table/9-convergence.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [62]
+) [60]
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
 (Font)              scaled to size 9.0347pt on input line 183.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular(2)/m/n' will be
@@ -1644,23 +1657,23 @@ File: ./figure/5-evaluation/convergence-time.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]) [64]
-\openout2 = `section/7-summarization.aux'.
+ [61]) [62]
+\openout2 = `section/6-summarization.aux'.
 
- (./section/7-summarization.tex
-第七章
-[65
-
-
-
-
-]) [66] [67] [68
+ (./section/6-summarization.tex
+第六章
+[63
 
 
 
-] [69] [70] [71] [72] [73] [74] [75] [76
 
-] (./section/acknoledgement.tex) [77] [78
+]) [64] [65] [66
+
+
+
+] [67] [68] [69] [70] [71] [72] [73] [74
+
+] (./section/acknoledgement.tex) [75] [76
 
 ]
 \openout2 = `section/resume.aux'.
@@ -1670,10 +1683,10 @@ Overfull \hbox (42.362pt too wide) in paragraph at lines 18--19
 []\TU/SimSun(0)/m/n/12.045 国 家 重 点 研 发 计 划：|  软 件 定 义 的 人 机 物 融 合 云 计 算 支 撑 技 术 与 平 台  |（\TU/TimesNewRoman(0)/m/sc/12.045 2018YFB1004805\TU/SimSun(0)/m/n/12.045 ）| 
  []
 
-) [79
+) [77
 
 
-] [80
+] [78
 
 
 
@@ -1686,46 +1699,46 @@ Overfull \hbox (42.362pt too wide) in paragraph at lines 18--19
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 
-Overfull \hbox (5.86716pt too wide) in paragraph at lines 204--204
+Overfull \hbox (5.86716pt too wide) in paragraph at lines 203--203
  []\TU/TimesNewRoman(0)/m/sc/12.045 MG20330012 
  []
 
 
-Overfull \hbox (5.86716pt too wide) in paragraph at lines 204--204
+Overfull \hbox (5.86716pt too wide) in paragraph at lines 203--203
  []\TU/TimesNewRoman(0)/m/sc/12.045 MG20330012 
  []
 
 > Step: build the whole table.
 
-Overfull \hbox (5.86716pt too wide) in paragraph at lines 204--204
+Overfull \hbox (5.86716pt too wide) in paragraph at lines 203--203
  []\TU/TimesNewRoman(0)/m/sc/12.045 MG20330012 
  []
 
-[81
+[79
 
-] [82
+] [80
 
 ]
 \tf@thm=\write8
 \openout8 = `njuthesis-sample.thm'.
 
- (./njuthesis-sample.aux (./section/1-introduction.aux) (./section/2-background.aux) (./section/3-system.aux) (./section/4-implementation.aux) (./section/5-alg.aux) (./section/6-evaluation.aux) (./section/7-summarization.aux) (./section/resume.aux))
+ (./njuthesis-sample.aux (./section/1-introduction.aux) (./section/2-background.aux) (./section/3-implementation.aux) (./section/4-alg.aux) (./section/5-evaluation.aux) (./section/6-summarization.aux) (./section/resume.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `njuthesis-sample.out' has not changed.
-(rerunfilecheck)             Checksum: D783453BE0383AC6FA617D429D7086B2;7561.
+(rerunfilecheck)             Checksum: 513FC912F5B34E1F25BB9369720FC01A;7059.
 Package logreq Info: Writing requests to 'njuthesis-sample.run.xml'.
 \openout1 = `njuthesis-sample.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42256 strings out of 476683
- 903441 string characters out of 5804047
- 2091878 words of memory out of 5000000
- 61741 multiletter control sequences out of 15000+600000
+ 42221 strings out of 476683
+ 902396 string characters out of 5804047
+ 2088730 words of memory out of 5000000
+ 61713 multiletter control sequences out of 15000+600000
  521476 words of font info for 205 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  102i,15n,131p,3288b,6583s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on njuthesis-sample.xdv (100 pages, 1320972 bytes).
+Output written on njuthesis-sample.xdv (98 pages, 1292420 bytes).

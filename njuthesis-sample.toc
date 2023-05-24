@@ -17,45 +17,41 @@
 \contentsline {subsection}{\numberline {2.2.1}数据并行化}{12}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}模型并行化}{15}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}模型划分技术}{17}{section.2.3}%
-\contentsline {section}{\numberline {2.4}本章小结}{18}{section.2.4}%
-\contentsline {chapter}{\bigger \normalfont \sffamily \numberline {第三章}研究动机与框架概览}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}难点与挑战}{21}{section.3.1}%
-\contentsline {section}{\numberline {3.2}问题分析}{23}{section.3.2}%
-\contentsline {section}{\numberline {3.3}\textsc {NetSplit}{} 设计}{24}{section.3.3}%
-\contentsline {section}{\numberline {3.4}本章小结}{25}{section.3.4}%
-\contentsline {chapter}{\bigger \normalfont \sffamily \numberline {第四章}大型神经网络训练框架的实现}{27}{chapter.4}%
-\contentsline {section}{\numberline {4.1}自动化模型转换}{27}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}获取计算图}{27}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}模型重建}{29}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}通信代价建模}{30}{section.4.2}%
-\contentsline {section}{\numberline {4.3}显存代价估计}{32}{section.4.3}%
-\contentsline {section}{\numberline {4.4}计算代价分析}{35}{section.4.4}%
-\contentsline {section}{\numberline {4.5}模型划分与训练}{38}{section.4.5}%
-\contentsline {section}{\numberline {4.6}本章小结}{40}{section.4.6}%
-\contentsline {chapter}{\bigger \normalfont \sffamily \numberline {第五章}模型自动化划分方法设计与实现}{41}{chapter.5}%
-\contentsline {section}{\numberline {5.1}模型划分的形式化定义}{41}{section.5.1}%
-\contentsline {section}{\numberline {5.2}基于约束优化的模型划分}{44}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Pesto的约束优化}{44}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}\textsc {NetSplit}{}的约束优化}{46}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}节点协同放置}{49}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}实现:使用PICOS和Gurobi}{51}{subsection.5.2.4}%
-\contentsline {section}{\numberline {5.3}本章小结}{53}{section.5.3}%
-\contentsline {chapter}{\bigger \normalfont \sffamily \numberline {第六章}实验评估}{55}{chapter.6}%
-\contentsline {section}{\numberline {6.1}实验设置}{55}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}硬件环境}{55}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}模型与数据集}{56}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}训练性能验证}{58}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}对比方法}{58}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}实验结果及分析}{60}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}有效性威胁分析}{62}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}训练收敛性验证}{62}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}对比方法}{62}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}实验结果及分析}{63}{subsection.6.3.2}%
-\contentsline {section}{\numberline {6.4}本章小结}{64}{section.6.4}%
-\contentsline {chapter}{\bigger \normalfont \sffamily \numberline {第七章}总结与展望}{65}{chapter.7}%
-\contentsline {section}{\numberline {7.1}工作总结}{65}{section.7.1}%
-\contentsline {section}{\numberline {7.2}工作展望}{66}{section.7.2}%
-\contentsline {chapter}{\bigger \normalfont \sffamily 参考文献}{69}{chapter*.38}%
-\contentsline {chapter}{\bigger \normalfont \sffamily 致\hskip 2em\relax {}谢}{77}{chapter*.39}%
-\contentsline {chapter}{\bigger \normalfont \sffamily 简历与科研成果}{79}{chapter*.40}%
-\contentsline {chapter}{\bigger \normalfont \sffamily 学位论文出版授权书}{81}{section*.45}%
+\contentsline {section}{\numberline {2.4}本章小结}{19}{section.2.4}%
+\contentsline {chapter}{\bigger \normalfont \sffamily \numberline {第三章}大型神经网络训练框架的实现}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}\textsc {NetSplit}{}概述}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}模型结构分析}{24}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}获取计算图}{24}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}模型重建}{26}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}通信代价建模}{27}{section.3.3}%
+\contentsline {section}{\numberline {3.4}显存代价估计}{29}{section.3.4}%
+\contentsline {section}{\numberline {3.5}计算代价分析}{32}{section.3.5}%
+\contentsline {section}{\numberline {3.6}模型划分与训练}{35}{section.3.6}%
+\contentsline {section}{\numberline {3.7}本章小结}{37}{section.3.7}%
+\contentsline {chapter}{\bigger \normalfont \sffamily \numberline {第四章}模型自动化划分方法设计与实现}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}模型划分的形式化定义}{39}{section.4.1}%
+\contentsline {section}{\numberline {4.2}基于约束优化的模型划分}{42}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Pesto的约束优化}{42}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}\textsc {NetSplit}{}的约束优化}{44}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}节点协同放置}{47}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}实现:使用PICOS和Gurobi}{49}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}本章小结}{51}{section.4.3}%
+\contentsline {chapter}{\bigger \normalfont \sffamily \numberline {第五章}实验评估}{53}{chapter.5}%
+\contentsline {section}{\numberline {5.1}实验设置}{53}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}硬件环境}{53}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}模型与数据集}{54}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}训练性能验证}{56}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}对比方法}{56}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}实验结果及分析}{58}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}有效性威胁分析}{60}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}训练收敛性验证}{60}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}对比方法}{60}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}实验结果及分析}{61}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}本章小结}{62}{section.5.4}%
+\contentsline {chapter}{\bigger \normalfont \sffamily \numberline {第六章}总结与展望}{63}{chapter.6}%
+\contentsline {section}{\numberline {6.1}工作总结}{63}{section.6.1}%
+\contentsline {section}{\numberline {6.2}工作展望}{64}{section.6.2}%
+\contentsline {chapter}{\bigger \normalfont \sffamily 参考文献}{67}{chapter*.38}%
+\contentsline {chapter}{\bigger \normalfont \sffamily 致\hskip 2em\relax {}谢}{75}{chapter*.39}%
+\contentsline {chapter}{\bigger \normalfont \sffamily 简历与科研成果}{77}{chapter*.40}%
+\contentsline {chapter}{\bigger \normalfont \sffamily 学位论文出版授权书}{79}{section*.45}%

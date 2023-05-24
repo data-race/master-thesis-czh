@@ -9,20 +9,19 @@
 \contentsline {figure}{\numberline {2-5}{\ignorespaces 参数服务器架构 vs Ring All-Reduce架构\relax }}{13}{figure.caption.12}%
 \contentsline {figure}{\numberline {2-6}{\ignorespaces 模型并行化 vs 流水线并行化\relax }}{16}{figure.caption.13}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {3-1}{\ignorespaces \textsc {NetSplit}{} 总体架构\relax }}{24}{figure.caption.14}%
+\contentsline {figure}{\numberline {3-1}{\ignorespaces \textsc {NetSplit}{} 总体架构\relax }}{23}{figure.caption.14}%
+\contentsline {figure}{\numberline {3-2}{\ignorespaces 模型转换为中间表示\relax }}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {3-3}{\ignorespaces 训练用时分解\relax }}{28}{figure.caption.17}%
+\contentsline {figure}{\numberline {3-4}{\ignorespaces 通信用时和传输数据量的关系\relax }}{28}{figure.caption.18}%
+\contentsline {figure}{\numberline {3-5}{\ignorespaces 计算代价分析\relax }}{34}{figure.caption.21}%
+\contentsline {figure}{\numberline {3-6}{\ignorespaces 模型划分与训练\relax }}{35}{figure.caption.22}%
+\contentsline {figure}{\numberline {3-7}{\ignorespaces 跨设备变量转移\relax }}{36}{figure.caption.23}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4-1}{\ignorespaces 模型转换为中间表示\relax }}{27}{figure.caption.15}%
-\contentsline {figure}{\numberline {4-2}{\ignorespaces 训练用时分解\relax }}{31}{figure.caption.17}%
-\contentsline {figure}{\numberline {4-3}{\ignorespaces 通信用时和传输数据量的关系\relax }}{31}{figure.caption.18}%
-\contentsline {figure}{\numberline {4-4}{\ignorespaces 计算代价分析\relax }}{37}{figure.caption.21}%
-\contentsline {figure}{\numberline {4-5}{\ignorespaces 模型划分与训练\relax }}{38}{figure.caption.22}%
-\contentsline {figure}{\numberline {4-6}{\ignorespaces 跨设备变量转移\relax }}{39}{figure.caption.23}%
+\contentsline {figure}{\numberline {4-1}{\ignorespaces GoogLeNet\upcite {googlenet} 的计算图\relax }}{39}{figure.caption.24}%
+\contentsline {figure}{\numberline {4-2}{\ignorespaces 前向传播(FP)用时和反向传播(BP)用时的对比\relax }}{41}{figure.caption.26}%
+\contentsline {figure}{\numberline {4-3}{\ignorespaces AmobaNet-D的计算图中通信代价的累积分布函数\relax }}{47}{figure.caption.28}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {5-1}{\ignorespaces GoogLeNet\upcite {googlenet} 的计算图\relax }}{41}{figure.caption.24}%
-\contentsline {figure}{\numberline {5-2}{\ignorespaces 前向传播(FP)用时和反向传播(BP)用时的对比\relax }}{43}{figure.caption.26}%
-\contentsline {figure}{\numberline {5-3}{\ignorespaces AmobaNet-D的计算图中通信代价的累积分布函数\relax }}{49}{figure.caption.28}%
-\addvspace {10.0pt}
-\contentsline {figure}{\numberline {6-1}{\ignorespaces PCIe Switch和PCIe Bridge的通信速度对比\relax }}{57}{figure.caption.32}%
-\contentsline {figure}{\numberline {6-2}{\ignorespaces \textsc {NetSplit}{}和其他模型划分方法在4个不同模型上的对比\relax }}{60}{figure.caption.34}%
-\contentsline {figure}{\numberline {6-3}{\ignorespaces 收敛性验证\relax }}{64}{figure.caption.37}%
+\contentsline {figure}{\numberline {5-1}{\ignorespaces PCIe Switch和PCIe Bridge的通信速度对比\relax }}{55}{figure.caption.32}%
+\contentsline {figure}{\numberline {5-2}{\ignorespaces \textsc {NetSplit}{}和其他模型划分方法在4个不同模型上的对比\relax }}{58}{figure.caption.34}%
+\contentsline {figure}{\numberline {5-3}{\ignorespaces 收敛性验证\relax }}{62}{figure.caption.37}%
 \addvspace {10.0pt}
