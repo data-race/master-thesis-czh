@@ -46,8 +46,8 @@
     department* = {Department of Computer Science and Technology},
     % 院系
     %
-    major = {计算机技术},
-    major* = {Computer Technology},
+    major = {计算机科学与技术},
+    major* = {Computer Science and Technology},
     % 专业
     %
     supervisor = {曹春,教授},
