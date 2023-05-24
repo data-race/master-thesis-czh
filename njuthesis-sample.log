@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.10)  24 MAY 2023 23:34
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.10)  24 MAY 2023 23:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1727,7 +1727,7 @@ Overfull \hbox (5.86716pt too wide) in paragraph at lines 203--203
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `njuthesis-sample.out' has not changed.
-(rerunfilecheck)             Checksum: 513FC912F5B34E1F25BB9369720FC01A;7059.
+(rerunfilecheck)             Checksum: 2A77FB3F798390225BA30527CA533080;7123.
 Package logreq Info: Writing requests to 'njuthesis-sample.run.xml'.
 \openout1 = `njuthesis-sample.run.xml'.
 
@@ -1735,10 +1735,10 @@ Package logreq Info: Writing requests to 'njuthesis-sample.run.xml'.
 Here is how much of TeX's memory you used:
  42221 strings out of 476683
  902396 string characters out of 5804047
- 2088745 words of memory out of 5000000
+ 2088756 words of memory out of 5000000
  61713 multiletter control sequences out of 15000+600000
  521476 words of font info for 205 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  102i,15n,131p,3288b,6583s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on njuthesis-sample.xdv (98 pages, 1292756 bytes).
+Output written on njuthesis-sample.xdv (98 pages, 1293548 bytes).

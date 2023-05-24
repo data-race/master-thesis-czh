@@ -18,9 +18,9 @@
 \contentsline {subsection}{\numberline {2.2.2}模型并行化}{15}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}模型划分技术}{17}{section.2.3}%
 \contentsline {section}{\numberline {2.4}本章小结}{19}{section.2.4}%
-\contentsline {chapter}{\bigger \normalfont \sffamily \numberline {第三章}大型神经网络训练框架的实现}{21}{chapter.3}%
+\contentsline {chapter}{\bigger \normalfont \sffamily \numberline {第三章}大型神经网络训练框架NetSplit的实现}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}\textsc {NetSplit}{}概述}{21}{section.3.1}%
-\contentsline {section}{\numberline {3.2}模型结构分析}{24}{section.3.2}%
+\contentsline {section}{\numberline {3.2}模型和计算图的转换}{24}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}获取计算图}{24}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}模型重建}{26}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}通信代价建模}{27}{section.3.3}%
